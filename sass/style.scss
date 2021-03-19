@@ -100,3 +100,146 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /* Alignments
 --------------------------------------------- */
 @import "utilities/alignments";
+$ruiter-geel: #ffe017;
+$ruiter-grijs: #222c33;
+$ruiter-lichtgrijs: #9c9b9b;
+$containerWidth: 1140px;
+
+$fontStack: 'Droid Sans',
+Verdana,
+sans-serif;
+
+@mixin Font {
+	font-family: $fontStack;
+}
+
+@mixin Flex($justify: false, $align: false, $direction: false) {
+	display: flex;
+	justify-content: $justify;
+	align-items: $align;
+
+	@if ($direction) {
+		flex-direction: $direction;
+	}
+}
+
+.content {
+	width: 100%;
+	height: 20rem;
+
+	display: block;
+
+	padding-top: 2rem;
+
+	&__container {
+		width: $containerWidth;
+		margin: 0 auto;
+		height: 100%;
+
+		@include Flex(space-between, flex-start, row);
+	}
+
+	&__left {
+		width: 825px;
+		height: 100%;
+
+
+		&--wrapper {
+			width: calc(100% - 20px);
+			margin-left: 20px;
+
+			height: 100%;
+		}
+
+		&--top {
+			@include Flex(flex-start, flex-start);
+
+		}
+
+		&--item {
+			width: calc(100% / 3 - 10px);
+			margin-right: 10px;
+			@include Flex(flex-start, center);
+			@include Font;
+
+			&-info {
+				@include Flex(flex-start, flex-start, column);
+				margin-left: 15px;
+
+				span {
+					color: $ruiter-grijs;
+					font-size: 14px;
+				}
+
+				p {
+					margin: 0;
+					font-size: 18px;
+					font-weight: 600;
+					line-height: 15px;
+					color: $ruiter-grijs;
+				}
+			}
+		}
+
+		&--main {
+			@include Flex(flex-start, flex-start, column);
+			margin-top: 4rem;
+		}
+
+		&--summary {
+			h4 {
+				@include Font;
+				margin: 0;
+				font-size: 20px;
+				font-weight: 200;
+			}
+
+			h3 {
+				@include Font;
+				text-transform: uppercase;
+				font-weight: 600;
+				color: $ruiter-lichtgrijs;
+				font-size: 24px;
+				line-height: 30px;
+				margin: 10px 0 0;
+				strong {
+					color: $ruiter-grijs;
+					font-weight: 600;
+				}
+			}
+		}
+
+		&--bottom {
+
+			section {
+				margin-top: 5rem;
+
+				h4 {
+					@include Font;
+					font-size: 20px;
+					margin: 0 0 1rem;
+				}
+
+				&:last-child {
+					p {
+						font-weight: 300;
+					}
+				}
+			}
+
+			p {
+				@include Font;
+				margin: 0;
+				font-weight: 600;
+				font-size: 16px;
+			}
+		}
+	}
+
+	&__right {
+		height: 20rem;
+		width: 300px;
+		background-color: $ruiter-geel;
+		border: 1px solid $ruiter-grijs;
+	}
+}

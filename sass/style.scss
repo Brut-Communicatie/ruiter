@@ -103,7 +103,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 $ruiter-geel: #ffe017;
 $ruiter-grijs: #222c33;
 $ruiter-lichtgrijs: #9c9b9b;
+$ruiter-banner: #edf0f0;
 $containerWidth: 1140px;
+
+$paddingContainer: 20px;
 
 $fontStack: 'Droid Sans',
 Verdana,
@@ -123,31 +126,33 @@ sans-serif;
 	}
 }
 
+@mixin Container {
+	width: $containerWidth;
+	margin: 0 auto;
+}
+
 .content {
 	width: 100%;
-	height: 20rem;
 
 	display: block;
 
 	padding-top: 2rem;
 
 	&__container {
-		width: $containerWidth;
-		margin: 0 auto;
+		@include Container;
 		height: 100%;
 
 		@include Flex(space-between, flex-start, row);
 	}
 
 	&__left {
-		width: 825px;
+		width: 800px;
 		height: 100%;
 
 
 		&--wrapper {
 			width: calc(100% - 20px);
-			margin-left: 20px;
-
+			margin-left: $paddingContainer;
 			height: 100%;
 		}
 
@@ -202,6 +207,7 @@ sans-serif;
 				font-size: 24px;
 				line-height: 30px;
 				margin: 10px 0 0;
+
 				strong {
 					color: $ruiter-grijs;
 					font-weight: 600;
@@ -241,5 +247,37 @@ sans-serif;
 		width: 300px;
 		background-color: $ruiter-geel;
 		border: 1px solid $ruiter-grijs;
+	}
+}
+
+.cta {
+	display: block;
+	width: 100%;
+	height: 20rem;
+	margin-top: 3rem;
+	background-color: $ruiter-banner;
+
+	&__container {
+		@include Container;
+		padding: 2rem 0;
+	}
+	&__wrapper{
+		margin-left: $paddingContainer;
+	}
+	&__form {
+		h4 {
+			@include Font;
+			margin: 0;
+			font-size: 20px;
+		}
+
+		p {
+			@include Font;
+			margin: 0;
+			color: $ruiter-grijs;
+			a, a:active, a:link, a:visited {
+				color: $ruiter-grijs;
+			}
+		}
 	}
 }

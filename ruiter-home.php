@@ -37,6 +37,8 @@ get_header();?>
 
                 <!-- Main content -->
                 <div class="content__left--main">
+
+                    <!-- Opsomming -->
                     <div class="content__left--summary">
                         <h4>Als Dakkapel Monteur bij Ruiter:</h4>
                         <h3>
@@ -48,6 +50,8 @@ get_header();?>
                             Kan je in <strong>loondiesnt of als ZZP'er</strong> aan de slag
                         </h3>
                     </div>
+
+                    <!-- Onderkant content -->
                     <div class="content__left--bottom">
                         <section>
                             <p>Als grootste dakkapelspecialist in Nederland staan wij voor kwaliteit en betrouwbaarheid. Voor onze Dakkapel Monteurs geldt dat ook. Wij zoeken daarom ervaren vakmannen. Vakmannen die onze klanten – die een gat in hun dak stiekem best spannend vinden – blij maken met een dakkapel waar zij vaak al maanden naar uitkijken. Vakmannen die samen met ons willen bouwen aan de toekomst. En dat op grote hoogtes. </p>
@@ -57,12 +61,24 @@ get_header();?>
                             <p>Jij droomde toen je klein was toch ook van afwisselend werk dat ertoe doet? Bij Ruiter Dakkapellen komt deze droom uit! Als Dakkapel Monteur ben jij specialist op het gebied van dakkapellen plaatsen. Je weet precies wat je doet, werkt nauwkeurig en bent oplossingsgericht. Ook de communicatie naar klanten gaat jou soepel af. Je stelt klanten op hun gemak en vertelt hoe deze – voor hen spannende – dag gaat verlopen. De combinatie van een vakkundig geplaatste dakkapel en tevreden klanten maakt jou trots!</p>
                         </section>
                     </div>
+
                 </div>
             </div>
         </div>
         
         <div class="content__right">
 
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <div class="cta__container">
+        <div class="cta__wrapper">
+            <div class="cta__form">
+                <h4>Hebben we een match?</h4>
+                <p>Solliciteer dan via onderstaand formulier of stuur een e-mail naar <a href="mailto:werkenbij@ruiterdakkapellen.nl">werkenbij@ruiterdakkapellen.nl</a></p>
+            </div>
         </div>
     </div>
 </section>

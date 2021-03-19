@@ -129,6 +129,16 @@ sans-serif;
 @mixin Container {
 	width: $containerWidth;
 	margin: 0 auto;
+
+	@include Responsive($containerWidth) {
+		width: calc(100% - 2rem);
+	}
+}
+
+@mixin Responsive($width) {
+	@media screen and (max-width: $width) {
+		@content;
+	}
 }
 
 .content {
@@ -143,17 +153,28 @@ sans-serif;
 		height: 100%;
 
 		@include Flex(space-between, flex-start, row);
+
+		@include Responsive($containerWidth) {
+			@include Flex(flex-start, flex-start, column);
+		}
 	}
 
 	&__left {
 		width: 800px;
 		height: 100%;
 
+		@include Responsive($containerWidth) {
+			width: 100%;
+		}
 
 		&--wrapper {
 			width: calc(100% - 20px);
 			margin-left: $paddingContainer;
 			height: 100%;
+
+			@include Responsive($containerWidth) {
+				margin-left: 0;
+			}
 		}
 
 		&--top {
@@ -247,6 +268,11 @@ sans-serif;
 		width: 300px;
 		background-color: $ruiter-geel;
 		border: 1px solid $ruiter-grijs;
+
+		@include Responsive($containerWidth) {
+			margin-top: 2rem;
+			width: 100%;
+		}
 	}
 }
 
@@ -261,9 +287,15 @@ sans-serif;
 		@include Container;
 		padding: 2rem 0;
 	}
-	&__wrapper{
+
+	&__wrapper {
 		margin-left: $paddingContainer;
+
+		@include Responsive($containerWidth) {
+			margin-left: 0;
+		}
 	}
+
 	&__form {
 		h4 {
 			@include Font;
@@ -275,7 +307,11 @@ sans-serif;
 			@include Font;
 			margin: 0;
 			color: $ruiter-grijs;
-			a, a:active, a:link, a:visited {
+
+			a,
+			a:active,
+			a:link,
+			a:visited {
 				color: $ruiter-grijs;
 			}
 		}

@@ -951,15 +951,42 @@ textarea {
 	flex-direction: row;
 }
 
+@media screen and (max-width: 1140px) {
+	.content__container {
+		width: calc(100% - 2rem);
+	}
+}
+
+@media screen and (max-width: 1140px) {
+	.content__container {
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		flex-direction: column;
+	}
+}
+
 .content__left {
 	width: 800px;
 	height: 100%;
+}
+
+@media screen and (max-width: 1140px) {
+	.content__left {
+		width: 100%;
+	}
 }
 
 .content__left--wrapper {
 	width: calc(100% - 20px);
 	margin-left: 20px;
 	height: 100%;
+}
+
+@media screen and (max-width: 1140px) {
+	.content__left--wrapper {
+		margin-left: 0;
+	}
 }
 
 .content__left--top {
@@ -1056,6 +1083,13 @@ textarea {
 	border: 1px solid #222c33;
 }
 
+@media screen and (max-width: 1140px) {
+	.content__right {
+		margin-top: 2rem;
+		width: 100%;
+	}
+}
+
 .cta {
 	display: block;
 	width: 100%;
@@ -1070,8 +1104,20 @@ textarea {
 	padding: 2rem 0;
 }
 
+@media screen and (max-width: 1140px) {
+	.cta__container {
+		width: calc(100% - 2rem);
+	}
+}
+
 .cta__wrapper {
 	margin-left: 20px;
+}
+
+@media screen and (max-width: 1140px) {
+	.cta__wrapper {
+		margin-left: 0;
+	}
 }
 
 .cta__form h4 {
@@ -1086,7 +1132,10 @@ textarea {
 	color: #222c33;
 }
 
-.cta__form p a, .cta__form p a:active, .cta__form p a:link, .cta__form p a:visited {
+.cta__form p a,
+.cta__form p a:active,
+.cta__form p a:link,
+.cta__form p a:visited {
 	color: #222c33;
 }
 

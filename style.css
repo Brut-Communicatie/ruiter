@@ -935,11 +935,24 @@ textarea {
 	margin-bottom: 1.5em;
 }
 
+@font-face {
+	font-family: "Droid Sans";
+	src: url("content/font/DroidSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Droid Sans";
+	src: url("content/font/DroidSans-Bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+
 .header {
 	width: 100%;
 	height: 35rem;
 	display: block;
 	background-color: #222c33;
+	background-size: cover;
 }
 
 .header__top {
@@ -1044,8 +1057,9 @@ textarea {
 	font-family: "Droid Sans", Verdana, sans-serif;
 	color: #fff;
 	margin: 0;
-	font-size: 55px;
-	line-height: 55px;
+	font-size: 75px;
+	line-height: 75px;
+	font-weight: bold;
 }
 
 .header__container p {
@@ -1061,9 +1075,9 @@ textarea {
 	color: #000;
 	background-color: #ffe017;
 	text-decoration: none;
-	font-size: 20px;
+	font-size: 25px;
 	font-family: "Droid Sans", Verdana, sans-serif;
-	padding: 1rem;
+	padding: 0.5rem 1rem;
 	font-weight: 600;
 }
 
@@ -1242,13 +1256,21 @@ textarea {
 .content__right--block--wrapper a:active,
 .content__right--block--wrapper a:visited,
 .content__right--block--wrapper a:link {
-	padding: 1rem;
+	font-family: "Droid Sans", Verdana, sans-serif;
+	padding: 0.5rem 1rem;
 	background-color: #222c33;
 	color: #ffe017;
 	text-decoration: none;
 	width: 100%;
 	text-align: center;
-	font-size: 18px;
+	font-size: 20px;
+}
+
+.content__right--block--wrapper a:hover,
+.content__right--block--wrapper a:active:hover,
+.content__right--block--wrapper a:visited:hover,
+.content__right--block--wrapper a:link:hover {
+	cursor: pointer !important;
 }
 
 .content__right--block--opsomming {
@@ -1658,7 +1680,6 @@ textarea {
 
 .bottom {
 	background-color: #ffe017;
-	height: 30rem;
 	display: block;
 }
 
@@ -1667,7 +1688,8 @@ textarea {
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-start;
+	align-items: stretch;
+	padding-bottom: 3rem;
 }
 
 @media screen and (max-width: 1140px) {
@@ -1700,6 +1722,57 @@ textarea {
 
 .bottom__left {
 	width: 60%;
+	font-family: "Droid Sans", Verdana, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+.bottom__left h3 {
+	color: #222c33;
+	font-size: 28px;
+	line-height: 32px;
+	font-weight: 700;
+}
+
+.bottom__left p {
+	color: #222c33;
+	margin: 0;
+}
+
+.bottom__left a, .bottom__left a:active, .bottom__left a:link, .bottom__left a:visited {
+	color: #222c33;
+	text-decoration: none;
+	border-bottom: 1px solid #222c33;
+	margin-top: 1rem;
+}
+
+.bottom__left a:before, .bottom__left a:active:before, .bottom__left a:link:before, .bottom__left a:visited:before {
+	content: "> ";
+	transition: margin-right .25s ease;
+}
+
+.bottom__left a:hover:before, .bottom__left a:active:hover:before, .bottom__left a:link:hover:before, .bottom__left a:visited:hover:before {
+	margin-right: 10px;
+}
+
+.newsletter {
+	width: 100%;
+	display: block;
+	height: 10rem;
+	background-color: #edf0f0;
+}
+
+.newsletter__container {
+	width: 1140px;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 1140px) {
+	.newsletter__container {
+		width: calc(100% - 2rem);
+	}
 }
 
 .horizontalOverlay {
@@ -1709,6 +1782,7 @@ textarea {
 	color: #5851ec;
 	position: relative;
 	display: inline-block;
+	cursor: pointer;
 }
 
 .horizontalOverlay::before {
@@ -1730,6 +1804,7 @@ textarea {
 .horizontalOverlay:hover::before {
 	transform-origin: 0 0;
 	transform: scaleX(1);
+	cursor: pointer;
 }
 
 .borderFade {

@@ -25,7 +25,7 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'ruiterdakkapellen' ); ?></a>
 
-	<header id="masthead" class="header">
+	<header id="masthead" class="header" style="background-image:url('<?php echo get_template_directory_uri(  );?>/content/img/achtergrond.png');">
 		<div class="header__top">
 			<div class="header__top--container">
 				<div class="header__top--logo">

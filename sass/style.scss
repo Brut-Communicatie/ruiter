@@ -100,6 +100,18 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /* Alignments
 --------------------------------------------- */
 @import "utilities/alignments";
+
+@font-face {
+    font-family: "Droid Sans";
+    src: url("content/font/DroidSans-Regular.ttf") format("truetype");
+}
+@font-face {
+	font-family: "Droid Sans";
+    src: url("content/font/DroidSans-Bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+  }
+
 $ruiter-geel: #ffe017;
 $ruiter-grijs: #222c33;
 $ruiter-lichtgrijs: #9c9b9b;
@@ -147,7 +159,7 @@ sans-serif;
 	height: 35rem;
 	display: block;
 	background-color: $ruiter-grijs;
-
+	background-size: cover;
 	&__top {
 		width: 100%;
 		height: 3rem;
@@ -217,8 +229,9 @@ sans-serif;
 			@include Font;
 			color: #fff;
 			margin: 0;
-			font-size: 55px;
-			line-height: 55px;
+			font-size: 75px;
+			line-height: 75px;
+			font-weight: bold;
 		}
 
 		p {
@@ -234,9 +247,9 @@ sans-serif;
 			color: #000;
 			background-color: $ruiter-geel;
 			text-decoration: none;
-			font-size: 20px;
+			font-size: 25px;
 			@include Font;
-			padding: 1rem;
+			padding: 0.5rem 1rem;
 			font-weight: 600;
 		}
 	}
@@ -387,13 +400,18 @@ sans-serif;
 				a:active,
 				a:visited,
 				a:link {
-					padding: 1rem;
+					@include Font;
+					padding: 0.5rem 1rem;
 					background-color: $ruiter-grijs;
 					color: $ruiter-geel;
 					text-decoration: none;
 					width: 100%;
 					text-align: center;
-					font-size: 18px;
+					font-size: 20px;
+
+					&:hover{
+						cursor: pointer !important;
+					}
 				}
 			}
 
@@ -740,12 +758,13 @@ sans-serif;
 
 .bottom {
 	background-color: $ruiter-geel;
-	height: 30rem;
+	// height: 30rem;
 	display: block;
 
 	&__container {
 		@include Container;
-		@include Flex(space-between, flex-start);
+		@include Flex(space-between, stretch);
+		padding-bottom: 3rem;
 	}
 
 	&__right {
@@ -773,6 +792,47 @@ sans-serif;
 
 	&__left {
 		width: 60%;
+		@include Font;
+
+		@include Flex(center, flex-start, column);
+		h3{
+			color: $ruiter-grijs;
+			font-size: 28px;
+			line-height: 32px;
+			font-weight: 700;
+		}
+
+		p{
+			color: $ruiter-grijs;
+			margin: 0;
+		}
+
+		a, a:active, a:link, a:visited{
+			color: $ruiter-grijs;
+			text-decoration: none;
+			border-bottom: 1px solid $ruiter-grijs;
+			margin-top: 1rem;
+			&:before{
+				content: "> ";
+				transition: margin-right .25s ease;
+			}
+
+			&:hover{
+				&:before{
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+}
+
+.newsletter{
+	width: 100%;
+	display: block;
+	height: 10rem;
+	background-color: $ruiter-banner;
+	&__container{
+		@include Container;
 	}
 }
 
@@ -783,6 +843,9 @@ sans-serif;
 	color: hsl(243, 80%, 62%);
 	position: relative;
 	display: inline-block;
+
+		cursor: pointer;
+	
 }
 
 .horizontalOverlay::before {
@@ -804,6 +867,7 @@ sans-serif;
 .horizontalOverlay:hover::before {
 	transform-origin: 0 0;
 	transform: scaleX(1);
+	cursor: pointer;
 }
 
 .borderFade {

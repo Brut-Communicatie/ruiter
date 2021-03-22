@@ -987,7 +987,10 @@ textarea {
 	align-items: flex-start;
 }
 
-.header__nav--items a, .header__nav--items a:active, .header__nav--items a:visited, .header__nav--items a:link {
+.header__nav--items a,
+.header__nav--items a:active,
+.header__nav--items a:visited,
+.header__nav--items a:link {
 	margin-left: 1.5rem;
 	color: #fff;
 	font-family: "Droid Sans", Verdana, sans-serif;
@@ -1024,7 +1027,10 @@ textarea {
 	font-size: 20px;
 }
 
-.header__container a, .header__container a:active, .header__container a:visited, .header__container a:link {
+.header__container a,
+.header__container a:active,
+.header__container a:visited,
+.header__container a:link {
 	color: #000;
 	background-color: #ffe017;
 	text-decoration: none;
@@ -1176,10 +1182,11 @@ textarea {
 }
 
 .content__right {
-	height: 20rem;
 	width: 300px;
-	background-color: #ffe017;
-	border: 1px solid #222c33;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: column;
 }
 
 @media screen and (max-width: 1140px) {
@@ -1187,6 +1194,191 @@ textarea {
 		margin-top: 2rem;
 		width: 100%;
 	}
+}
+
+.content__right--block {
+	background-color: #ffe017;
+	border: 1px solid #222c33;
+	width: 100%;
+}
+
+.content__right--block--wrapper {
+	width: 90%;
+	margin: 1rem auto;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+.content__right--block--wrapper a,
+.content__right--block--wrapper a:active,
+.content__right--block--wrapper a:visited,
+.content__right--block--wrapper a:link {
+	padding: 1rem;
+	background-color: #222c33;
+	color: #ffe017;
+	text-decoration: none;
+	width: 100%;
+	text-align: center;
+	font-size: 18px;
+}
+
+.content__right--block--opsomming {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: column;
+	width: 100%;
+	margin-top: 1rem;
+	color: #222c33;
+}
+
+.content__right--block--opsomming h5 {
+	font-family: "Droid Sans", Verdana, sans-serif;
+	font-size: 17px;
+	margin: 0 0 10px;
+}
+
+.content__right--block--opsomming p {
+	font-family: "Droid Sans", Verdana, sans-serif;
+	font-size: 14px;
+	margin: 0;
+	width: 90%;
+	margin-left: 10%;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.content__right--block--opsomming p:before {
+	content: url("content/img/check-circle-regular.svg");
+	position: absolute;
+	width: 15px;
+	top: 3px;
+	left: -10%;
+}
+
+.content__right--block--opsomming:last-child p:before {
+	content: url("content/img/arrow-right-solid.svg");
+	position: absolute;
+	width: 15px;
+	top: 3px;
+	left: -10%;
+}
+
+.content__right--block--opsomming-wrapper {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: column;
+	width: 100%;
+}
+
+.content__right--block--intro {
+	margin-top: 10px;
+}
+
+.content__right--block--intro h4 {
+	margin: 0;
+	font-family: "Droid Sans", Verdana, sans-serif;
+	font-size: 24px;
+}
+
+.content__right--block--intro p {
+	margin: 0;
+	font-family: "Droid Sans", Verdana, sans-serif;
+}
+
+.content__right--contact {
+	margin-top: 2rem;
+	border: 1px solid #222c33;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content__right--contact-wrapper {
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	height: 10rem;
+}
+
+.content__right--contact-img {
+	width: 40%;
+}
+
+.content__right--contact-info {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	width: 55%;
+	height: 10rem;
+	color: #222c33;
+}
+
+.content__right--contact-info h4 {
+	font-family: "Droid Sans", Verdana, sans-serif;
+	margin: 0 0 5px;
+}
+
+.content__right--contact-info p {
+	font-family: "Droid Sans", Verdana, sans-serif;
+	margin: 0 0 5px;
+	font-size: 13px;
+}
+
+.content__right--contact-socials {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 80%;
+}
+
+.content__right--contact-socials a,
+.content__right--contact-socials a:active,
+.content__right--contact-socials a:visited,
+.content__right--contact-socials a:link {
+	width: 35px;
+	height: 35px;
+	background-color: #172f5d;
+	padding: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: opacity .25s ease;
+}
+
+.content__right--contact-socials a:first-child,
+.content__right--contact-socials a:active:first-child,
+.content__right--contact-socials a:visited:first-child,
+.content__right--contact-socials a:link:first-child {
+	background-color: #53ae48;
+}
+
+.content__right--contact-socials a:last-child,
+.content__right--contact-socials a:active:last-child,
+.content__right--contact-socials a:visited:last-child,
+.content__right--contact-socials a:link:last-child {
+	background-color: #ab2c2a;
+}
+
+.content__right--contact-socials a img,
+.content__right--contact-socials a:active img,
+.content__right--contact-socials a:visited img,
+.content__right--contact-socials a:link img {
+	filter: invert(100%);
+}
+
+.content__right--contact-socials a:hover,
+.content__right--contact-socials a:active:hover,
+.content__right--contact-socials a:visited:hover,
+.content__right--contact-socials a:link:hover {
+	opacity: 0.8;
 }
 
 .cta {
@@ -1238,6 +1430,58 @@ textarea {
 	color: #222c33;
 }
 
+.cta__journey {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: row;
+	position: relative;
+	width: 100%;
+}
+
+.cta__journey--line {
+	width: 100%;
+	height: 5px;
+	background-color: red;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.cta__journey--item {
+	width: calc(100% / 5 - 10px);
+}
+
+.cta__journey--circle {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background-color: #ffe017;
+	border: 1px solid #222c33;
+	margin: 1rem 0;
+}
+
+.cta__journey--content {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	font-family: "Droid Sans", Verdana, sans-serif;
+}
+
+.cta__journey--content h4 {
+	margin: 0;
+	text-align: center;
+}
+
+.cta__journey--content p {
+	margin: 0;
+	width: 100%;
+	text-align: center;
+}
+
 .horizontalOverlay {
 	overflow: hidden;
 	padding: 12px 30px;
@@ -1255,7 +1499,7 @@ textarea {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: #5851ec;
+	background: #9c9b9b;
 	opacity: 0.1;
 	transform: scaleX(0);
 	transform-origin: 100% 100%;

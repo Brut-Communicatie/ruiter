@@ -68,6 +68,55 @@ get_header();?>
         
         <div class="content__right">
 
+
+            <div class="content__right--block">
+                <div class="content__right--block--wrapper">
+                    <a class="horizontalOverlay" href="#">Direct solliciteren</a>
+                    <div class="content__right--block--intro">
+                        <h4>Dakkapel monteur</h4>
+                        <p>Loondienst of ZZP</p>
+                    </div>
+                    <div class="content__right--block--opsomming-wrapper">
+
+               
+                        <div class="content__right--block--opsomming">
+                            <h5>Jij bent:</h5>
+                            <p>Ervaren en steekt de handen graag uit de mouwen</p>
+                            <p>Nauwkeurig en oplossingsgericht</p>
+                            <p>Een teamplayer die zelfstandig ook goed zijn weg kan vinden</p>
+                            <p>Klantvriendelijk, representatief en sociaal vaardig</p>
+                        </div>
+
+                        <div class="content__right--block--opsomming">
+                            <h5>Wij bieden jou:</h5>
+                            <p>Een functie in dienst bij Ruiter Dakkapellen of als ZZP’er</p>
+                            <p>Marktconform salaris / goede tarieven</p>
+                            <p>Goede secundaire voorwaarden</p>
+                            <p>Gezellige vrijdagmiddagborrels (als het weer mag)</p>
+  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="content__right--contact">
+                <div class="content__right--contact-wrapper">
+                    <div class="content__right--contact-img">
+                        <img src="<?php echo get_template_directory_uri();?>/content/img/patricia.png" alt="Foto van Patricia" width="150px">
+                    </div>
+                    <div class="content__right--contact-info">
+                        <h4>Vragen?</h4>
+                        <p>Neem contact op met Patricia</p>
+                        <div class="content__right--contact-socials">
+                            <a href="#"><img src="<?php echo get_template_directory_uri();?>/content/img/whatsapp-brands.svg" alt="Whatsapp" width="20px"></a>
+                            <a href="#"><img src="<?php echo get_template_directory_uri();?>/content/img/phone-alt-solid.svg" alt="Tel" width="20px"></a>
+                            <a href="#"><img src="<?php echo get_template_directory_uri();?>/content/img/envelope-solid.svg" alt="Mail" width="20px"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -78,6 +127,19 @@ get_header();?>
             <div class="cta__form">
                 <h4>Hebben we een match?</h4>
                 <p>Solliciteer dan via onderstaand formulier of stuur een e-mail naar <a href="mailto:werkenbij@ruiterdakkapellen.nl">werkenbij@ruiterdakkapellen.nl</a></p>
+            </div>
+
+
+
+            <div class="cta__journey">
+                <div class="cta__journey--line"></div>
+                <div class="cta__journey--item">
+                    <div class="cta__journey--content">
+                        <h4>Je solliciteerd</h4>
+                        <div class="cta__journey--circle"></div>
+                        <p>Content over het onderdeel</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

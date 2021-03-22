@@ -164,6 +164,7 @@ sans-serif;
 		height: 5rem;
 		display: block;
 		margin-top: 25px;
+
 		&--container {
 			@include Container;
 			@include Flex(flex-end, flex-start);
@@ -172,7 +173,10 @@ sans-serif;
 		&--items {
 			@include Flex(flex-end, flex-start);
 
-			a, a:active, a:visited, a:link {
+			a,
+			a:active,
+			a:visited,
+			a:link {
 				margin-left: 1.5rem;
 				color: #fff;
 				@include Font;
@@ -185,7 +189,8 @@ sans-serif;
 		@include Container;
 		@include Flex(center, flex-start, column);
 		margin-top: 2.5rem;
-		h1{
+
+		h1 {
 			@include Font;
 			color: #fff;
 			margin: 0;
@@ -193,13 +198,16 @@ sans-serif;
 			line-height: 55px;
 		}
 
-		p{
+		p {
 			@include Font;
 			color: #fff;
 			font-size: 20px;
 		}
 
-		a, a:active, a:visited, a:link{
+		a,
+		a:active,
+		a:visited,
+		a:link {
 			color: #000;
 			background-color: $ruiter-geel;
 			text-decoration: none;
@@ -334,14 +342,170 @@ sans-serif;
 	}
 
 	&__right {
-		height: 20rem;
 		width: 300px;
-		background-color: $ruiter-geel;
-		border: 1px solid $ruiter-grijs;
+		@include Flex(flex-start, flex-start, column);
 
 		@include Responsive($containerWidth) {
 			margin-top: 2rem;
 			width: 100%;
+		}
+
+		&--block {
+			background-color: $ruiter-geel;
+			border: 1px solid $ruiter-grijs;
+			width: 100%;
+
+			&--wrapper {
+				width: 90%;
+				margin: 1rem auto;
+				@include Flex(flex-start, flex-start, column);
+
+				a,
+				a:active,
+				a:visited,
+				a:link {
+					padding: 1rem;
+					background-color: $ruiter-grijs;
+					color: $ruiter-geel;
+					text-decoration: none;
+					width: 100%;
+					text-align: center;
+					font-size: 18px;
+				}
+			}
+
+			&--opsomming {
+				@include Flex(flex-start, flex-start, column);
+				width: 100%;
+				margin-top: 1rem;
+				color: $ruiter-grijs;
+
+				h5 {
+					@include Font;
+					font-size: 17px;
+					margin: 0 0 10px;
+				}
+
+				p {
+					@include Font;
+					font-size: 14px;
+					margin: 0;
+					width: 90%;
+					margin-left: 10%;
+					position: relative;
+					margin-bottom: 10px;
+
+					&:before {
+						content: url("content/img/check-circle-regular.svg");
+						position: absolute;
+						width: 15px;
+						top: 3px;
+						left: -10%;
+					}
+				}
+
+				&:last-child{
+					p{
+						&:before {
+							content: url("content/img/arrow-right-solid.svg");
+							position: absolute;
+							width: 15px;
+							top: 3px;
+							left: -10%;
+						}
+					}
+				}
+
+				&-wrapper {
+					@include Flex(flex-start, flex-start, column);
+					width: 100%;
+				}
+
+			}
+
+			&--intro {
+				margin-top: 10px;
+
+				h4 {
+					margin: 0;
+					@include Font;
+					font-size: 24px;
+				}
+
+				p {
+					margin: 0;
+					@include Font;
+				}
+			}
+		}
+
+		&--contact {
+			margin-top: 2rem;
+			border: 1px solid $ruiter-grijs;
+			width: 100%;
+
+			@include Flex(center, center);
+
+			&-wrapper {
+				width: 90%;
+				@include Flex(space-between, center);
+				margin: 0 auto;
+				height: 10rem;
+			}
+
+			&-img {
+				width: 40%;
+			}
+
+			&-info {
+				@include Flex(center, flex-start, column);
+				width: 55%;
+				height: 10rem;
+				color: $ruiter-grijs;
+				h4 {
+					@include Font;
+					margin: 0 0 5px;
+				}
+
+				p {
+					@include Font;
+					margin: 0 0 5px;
+					font-size: 13px;
+				}
+			}
+
+			&-socials {
+				@include Flex(space-between, flex-start);
+				width: 80%;
+
+				a,
+				a:active,
+				a:visited,
+				a:link {
+					width: 35px;
+					height: 35px;
+					background-color: #172f5d;
+					padding: 5px;
+					@include Flex(center, center);
+
+					transition: opacity .25s ease;
+
+					&:first-child{
+						background-color: #53ae48;
+					}
+					&:last-child{
+						background-color: #ab2c2a;
+					}
+
+					img{
+						filter: invert(100%);
+					}
+
+					&:hover{
+						opacity: 0.8;
+					}
+				}
+			}
 		}
 	}
 }
@@ -386,59 +550,105 @@ sans-serif;
 			}
 		}
 	}
+
+	&__journey {
+		@include Flex(flex-start, flex-start, row);
+		position: relative;
+		width: 100%;
+
+		&--line {
+			width: 100%;
+			height: 5px;
+			background-color: red;
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		&--item {
+			width: calc(100% / 5 - 10px);
+
+		}
+
+		&--circle{
+			width: 25px;
+			height: 25px;
+			border-radius: 50%;
+			background-color: $ruiter-geel;
+			border: 1px solid $ruiter-grijs;
+			margin: 1rem 0;
+		}
+
+		&--content {
+			width: 100%;
+			@include Flex(flex-start, center, column);
+			@include Font;
+
+			h4 {
+				margin: 0;
+				text-align: center;
+			}
+
+			p {
+				margin: 0;
+				width: 100%;
+				text-align: center;
+			}
+		}
+	}
 }
 
 .horizontalOverlay {
-    overflow: hidden;
-    padding: 12px 30px;
-    background-color: hsl(222, 100%, 95%);
-    color: hsl(243, 80%, 62%);
-    position: relative;
-    display: inline-block;
+	overflow: hidden;
+	padding: 12px 30px;
+	background-color: hsl(222, 100%, 95%);
+	color: hsl(243, 80%, 62%);
+	position: relative;
+	display: inline-block;
 }
 
 .horizontalOverlay::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: hsl(243, 80%, 62%);
-    opacity: 0.1;
-    transform: scaleX(0);
-    transform-origin: 100% 100%;
-    transition: transform 0.6s cubic-bezier(0.53, 0.21, 0, 1);
-    will-change: transform;
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: $ruiter-lichtgrijs;
+	opacity: 0.1;
+	transform: scaleX(0);
+	transform-origin: 100% 100%;
+	transition: transform 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+	will-change: transform;
 }
 
-.horizontalOverlay:hover::before  {
-    transform-origin: 0 0;
-    transform: scaleX(1);
+.horizontalOverlay:hover::before {
+	transform-origin: 0 0;
+	transform: scaleX(1);
 }
 
 .borderFade {
-    padding-bottom: 1px;
-    color: #fff;
-    position: relative;
+	padding-bottom: 1px;
+	color: #fff;
+	position: relative;
 }
 
 .borderFade::after {
-    content: '';
-    position: absolute;
-    height: 2px;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    opacity: 0;
-    transform: translateY(3px);
-    background: $ruiter-geel;
-    transition: opacity 0.2s ease, transform 0.2s ease;
+	content: '';
+	position: absolute;
+	height: 2px;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	opacity: 0;
+	transform: translateY(3px);
+	background: $ruiter-geel;
+	transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 .borderFade:hover::after {
-    opacity: 1;
-    transform: translateY(0);
+	opacity: 1;
+	transform: translateY(0);
 }
-

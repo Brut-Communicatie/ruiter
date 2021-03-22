@@ -160,6 +160,11 @@ sans-serif;
 	display: block;
 	background-color: $ruiter-grijs;
 	background-size: cover;
+
+	@include Responsive($tabletBreakpoint){
+		height: fit-content;
+		padding-bottom: 3rem;
+	}
 	&__top {
 		width: 100%;
 		height: 3rem;
@@ -190,6 +195,10 @@ sans-serif;
 				margin-left: 2rem;
 				font-size: 16px;
 				font-weight: 600;
+
+				@include Responsive($tabletBreakpoint){
+					display: none;
+				}
 			}
 		}
 	}
@@ -294,6 +303,10 @@ sans-serif;
 		&--top {
 			@include Flex(flex-start, flex-start);
 
+			@include Responsive($tabletBreakpoint){
+				flex-wrap: wrap;
+			}
+
 		}
 
 		&--item {
@@ -301,6 +314,11 @@ sans-serif;
 			margin-right: 10px;
 			@include Flex(flex-start, center);
 			@include Font;
+
+			@include Responsive($tabletBreakpoint){
+				width: calc(100% / 2 - 10px);
+				margin-bottom: 1rem;
+			}
 
 			&-info {
 				@include Flex(flex-start, flex-start, column);
@@ -765,6 +783,11 @@ sans-serif;
 		@include Container;
 		@include Flex(space-between, stretch);
 		padding-bottom: 3rem;
+
+		@include Responsive($tabletBreakpoint){
+			@include Flex(flex-start, flex-start, column);
+			padding-bottom: 0;
+		}
 	}
 
 	&__right {
@@ -774,6 +797,12 @@ sans-serif;
 		@include Font;
 		transform: translateY(-2rem);
 		padding: 2rem;
+
+		@include Responsive($tabletBreakpoint){
+			width: 100%;
+			transform: translateY(0);
+			margin: 2rem 0;
+		}
 
 		h3 {
 			margin: 0 0 30px;
@@ -793,6 +822,10 @@ sans-serif;
 	&__left {
 		width: 60%;
 		@include Font;
+
+		@include Responsive($tabletBreakpoint){
+			width: 100%;
+		}
 
 		@include Flex(center, flex-start, column);
 		h3{

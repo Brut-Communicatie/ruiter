@@ -143,7 +143,7 @@ get_header();?>
             <p>
             Ruiter is marktleider in Nederland en staat voor kwaliteit en betrouwbaarheid. Al ruim 40 jaar produceren en monteren wij meer dan 70 dakkapellen per week. Dit doen we voor consumenten, woningbouwcorporaties, dealers, bouwmarkten, aannemers, onderhoudsbedrijven en nog vele andere relaties. Met meerdere showrooms verspreid in het land bedienen wij een groot deel van Nederland, maar met name de Randstad. 
             </p>
-            <a href="#" target="_blank" rel="noopener noreferrer">Meer informatie over Ruiter Dakkapellen.</a>
+            <a href="https://www.ruiterdakkapellen.nl/over-ons" target="_blank" rel="noopener noreferrer">Meer informatie over Ruiter Dakkapellen.</a>
         </div>
 
         <div class="bottom__right">
@@ -166,7 +166,14 @@ get_header();?>
 </section>
 
 <section class="newsletter">
-    <div class="newsletter__container"></div>
+    <div class="newsletter__container">
+        <div class="newsletter__left">
+            
+        </div>
+        <div class="newsletter__right">
+
+        </div>
+    </div>
 </section>
 
 <?php get_footer();?>

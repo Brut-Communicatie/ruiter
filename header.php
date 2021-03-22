@@ -37,8 +37,8 @@
 		<div class="header__nav">
 			<div class="header__nav--container">
 				<div class="header__nav--items">
-					<a class="borderFade" href="#" target="_blank" rel="norefferer noopener">Alle vacatures</a>
-					<a class="borderFade" href="#" target="_blank" rel="norefferer noopener">Over ons</a>
+					<a class="borderFade" href="https://www.ruiterdakkapellen.nl/vacatures" target="_blank" rel="norefferer noopener">Alle vacatures</a>
+					<a class="borderFade" href="https://www.ruiterdakkapellen.nl/over-ons" target="_blank" rel="norefferer noopener">Over ons</a>
 				</div>
 			</div>
 		</div>

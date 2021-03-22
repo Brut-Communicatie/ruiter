@@ -955,6 +955,13 @@ textarea {
 	background-size: cover;
 }
 
+@media screen and (max-width: 900px) {
+	.header {
+		height: fit-content;
+		padding-bottom: 3rem;
+	}
+}
+
 .header__top {
 	width: 100%;
 	height: 3rem;
@@ -998,6 +1005,12 @@ textarea {
 	margin-left: 2rem;
 	font-size: 16px;
 	font-weight: 600;
+}
+
+@media screen and (max-width: 900px) {
+	.header__top--container p {
+		display: none;
+	}
 }
 
 .header__nav {
@@ -1141,6 +1154,12 @@ textarea {
 	align-items: flex-start;
 }
 
+@media screen and (max-width: 900px) {
+	.content__left--top {
+		flex-wrap: wrap;
+	}
+}
+
 .content__left--item {
 	width: 100%;
 	margin-right: 10px;
@@ -1148,6 +1167,13 @@ textarea {
 	justify-content: flex-start;
 	align-items: center;
 	font-family: "Droid Sans", Verdana, sans-serif;
+}
+
+@media screen and (max-width: 900px) {
+	.content__left--item {
+		width: calc(100% / 2 - 10px);
+		margin-bottom: 1rem;
+	}
 }
 
 .content__left--item-info {
@@ -1698,6 +1724,16 @@ textarea {
 	}
 }
 
+@media screen and (max-width: 900px) {
+	.bottom__container {
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		flex-direction: column;
+		padding-bottom: 0;
+	}
+}
+
 .bottom__right {
 	width: 30%;
 	background-color: #222c33;
@@ -1705,6 +1741,14 @@ textarea {
 	font-family: "Droid Sans", Verdana, sans-serif;
 	transform: translateY(-2rem);
 	padding: 2rem;
+}
+
+@media screen and (max-width: 900px) {
+	.bottom__right {
+		width: 100%;
+		transform: translateY(0);
+		margin: 2rem 0;
+	}
 }
 
 .bottom__right h3 {
@@ -1727,6 +1771,12 @@ textarea {
 	justify-content: center;
 	align-items: flex-start;
 	flex-direction: column;
+}
+
+@media screen and (max-width: 900px) {
+	.bottom__left {
+		width: 100%;
+	}
 }
 
 .bottom__left h3 {

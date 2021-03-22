@@ -29,7 +29,7 @@
 			<div class="footer__item">
 				<div class="footer__social--wrapper">
 					<a href="#" target="_blank" rel="noreferrer noopener" class="footer__social">
-					<img src="<?php echo get_template_directory_uri();?>/content/img/facebook-f-brands.svg" alt="Facebook logo" width="20px"/>
+					<img src="<?php echo get_template_directory_uri();?>/content/img/facebook-f-brands.svg" alt="Facebook logo" width="15px"/>
 					</a>
 					<a href="#" target="_blank" rel="noreferrer noopener" class="footer__social">
 					<img src="<?php echo get_template_directory_uri();?>/content/img/twitter-brands.svg" alt="Twitter logo" width="20px"/>

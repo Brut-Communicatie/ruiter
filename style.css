@@ -947,12 +947,23 @@ textarea {
 	font-style: normal;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
 .header {
 	width: 100%;
 	height: 35rem;
 	display: block;
 	background-color: #222c33;
 	background-size: cover;
+	background-positioN: center;
 }
 
 @media screen and (max-width: 900px) {
@@ -1007,7 +1018,7 @@ textarea {
 	font-weight: 600;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 450px) {
 	.header__top--container p {
 		display: none;
 	}
@@ -1073,6 +1084,13 @@ textarea {
 	font-size: 75px;
 	line-height: 75px;
 	font-weight: bold;
+}
+
+@media screen and (max-width: 900px) {
+	.header__container h1 {
+		font-size: 50px;
+		line-height: 56px;
+	}
 }
 
 .header__container p {
@@ -1174,6 +1192,20 @@ textarea {
 		width: calc(100% / 2 - 10px);
 		margin-bottom: 1rem;
 	}
+}
+
+@media screen and (max-width: 450px) {
+	.content__left--item {
+		width: 100%;
+	}
+}
+
+.content__left--item-img {
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .content__left--item-info {
@@ -1464,6 +1496,12 @@ textarea {
 	padding: 1rem 0 2rem;
 }
 
+@media screen and (max-width: 900px) {
+	.cta {
+		margin-top: 1rem;
+	}
+}
+
 .cta__container {
 	width: 1140px;
 	margin: 0 auto;
@@ -1582,9 +1620,61 @@ textarea {
 	font-family: "Droid Sans", Verdana, sans-serif;
 }
 
+@media screen and (max-width: 450px) {
+	.cta__form--item input[type="submit"] {
+		width: 100%;
+	}
+}
+
 .cta__form--item input[type="submit"]:hover {
 	cursor: pointer;
 	opacity: 0.9;
+}
+
+.cta__form--options {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+.cta__form--options-item {
+	width: 100%;
+	padding: 2.5px 0;
+}
+
+.cta__form--options-item input[type="checkbox"] {
+	width: fit-content;
+	margin-right: 10px;
+	padding: 0;
+}
+
+.cta__form--options-item input[type="submit"] {
+	background-color: unset;
+	color: #222c33;
+	padding: 0;
+	margin-bottom: 5px;
+	font-size: 16px;
+}
+
+.cta__form--options-item input[type="file"] {
+	width: 30%;
+	padding: 0;
+	line-height: 16px;
+}
+
+.cta__form--options-item input[type="file"]:hover {
+	cursor: pointer;
+}
+
+.cta__form--options-item svg {
+	width: 15px;
+	margin-right: 2px;
+	height: 15px;
+}
+
+.cta__form--options-item svg path {
+	fill: #222c33;
 }
 
 .cta__journey {
@@ -1594,7 +1684,7 @@ textarea {
 	flex-direction: row;
 	position: relative;
 	width: 100%;
-	margin-top: 2rem;
+	margin-top: 3rem;
 }
 
 @media screen and (max-width: 1140px) {
@@ -1603,6 +1693,7 @@ textarea {
 		justify-content: flex-start;
 		align-items: flex-start;
 		flex-direction: column;
+		margin-top: 2rem;
 	}
 }
 
@@ -1650,6 +1741,7 @@ textarea {
 	.cta__journey--circle {
 		order: 0;
 		margin-right: 20px;
+		transform: translateY(15px);
 	}
 }
 
@@ -1791,38 +1883,162 @@ textarea {
 	margin: 0;
 }
 
-.bottom__left a, .bottom__left a:active, .bottom__left a:link, .bottom__left a:visited {
+.bottom__left a,
+.bottom__left a:active,
+.bottom__left a:link,
+.bottom__left a:visited {
 	color: #222c33;
 	text-decoration: none;
 	border-bottom: 1px solid #222c33;
 	margin-top: 1rem;
 }
 
-.bottom__left a:before, .bottom__left a:active:before, .bottom__left a:link:before, .bottom__left a:visited:before {
+.bottom__left a:before,
+.bottom__left a:active:before,
+.bottom__left a:link:before,
+.bottom__left a:visited:before {
 	content: "> ";
 	transition: margin-right .25s ease;
 }
 
-.bottom__left a:hover:before, .bottom__left a:active:hover:before, .bottom__left a:link:hover:before, .bottom__left a:visited:hover:before {
+.bottom__left a:hover:before,
+.bottom__left a:active:hover:before,
+.bottom__left a:link:hover:before,
+.bottom__left a:visited:hover:before {
 	margin-right: 10px;
 }
 
 .newsletter {
 	width: 100%;
 	display: block;
-	height: 10rem;
 	background-color: #edf0f0;
 }
 
 .newsletter__container {
 	width: 1140px;
 	margin: 0 auto;
+	padding: 4rem 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 @media screen and (max-width: 1140px) {
 	.newsletter__container {
 		width: calc(100% - 2rem);
 	}
+}
+
+@media screen and (max-width: 900px) {
+	.newsletter__container {
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		flex-direction: column;
+	}
+}
+
+.newsletter__left {
+	width: 40%;
+	color: #222c33;
+	font-family: "Droid Sans", Verdana, sans-serif;
+}
+
+@media screen and (max-width: 900px) {
+	.newsletter__left {
+		width: 100%;
+	}
+}
+
+.newsletter__left h3 {
+	color: #222c33;
+	font-size: 28px;
+	line-height: 32px;
+	font-weight: 700;
+	margin: 0 0 25px;
+}
+
+.newsletter__left p {
+	color: #222c33;
+	margin: 0;
+}
+
+.newsletter__right {
+	width: 55%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+@media screen and (max-width: 900px) {
+	.newsletter__right {
+		width: 100%;
+		margin-top: 1rem;
+	}
+}
+
+.newsletter__right form {
+	width: 100%;
+}
+
+.newsletter__right--row {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 100%;
+}
+
+@media screen and (max-width: 350px) {
+	.newsletter__right--row {
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		flex-direction: column;
+	}
+}
+
+.newsletter__right--row input[type="email"] {
+	width: 80%;
+	padding: 12px;
+	font-family: "Droid Sans", Verdana, sans-serif;
+	margin-right: 20px;
+}
+
+@media screen and (max-width: 350px) {
+	.newsletter__right--row input[type="email"] {
+		width: 100%;
+	}
+}
+
+.newsletter__right--row input[type="submit"] {
+	width: fit-content;
+	margin-left: auto;
+	background-color: #222c33;
+	color: #ffe017;
+	padding: 15px 30px;
+	border-radius: 0;
+	font-size: 18px;
+	border: 0;
+	font-family: "Droid Sans", Verdana, sans-serif;
+}
+
+@media screen and (max-width: 350px) {
+	.newsletter__right--row input[type="submit"] {
+		margin-top: 10px;
+		width: 100%;
+	}
+}
+
+.newsletter__right--row label {
+	margin-left: 10px;
+	font-family: "Droid Sans", Verdana, sans-serif;
+}
+
+.newsletter__right--row:last-child {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 10px;
 }
 
 .horizontalOverlay {
@@ -1879,6 +2095,29 @@ textarea {
 .borderFade:hover::after {
 	opacity: 1;
 	transform: translateY(0);
+}
+
+.input__file::-webkit-file-upload-button {
+	visibility: hidden;
+}
+
+.input__file::before {
+	content: 'CV uploaden (verplicht)';
+	display: inline-block;
+	outline: none;
+	white-space: nowrap;
+	-webkit-user-select: none;
+	cursor: pointer;
+	font-family: "Droid Sans", Verdana, sans-serif;
+	font-size: 16px;
+}
+
+.input__file:hover::before {
+	border-color: black;
+}
+
+.input__file:active::before {
+	background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
 }
 
 /*# sourceMappingURL=style.css.map */

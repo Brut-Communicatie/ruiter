@@ -13,21 +13,27 @@ get_header();?>
                 <!-- Bovenste bar -->
                 <div class="content__left--top">
                     <div class="content__left--item">
-                        <img src="<?php echo get_template_directory_uri();?>/content/img/1.png" width="50px"/>
+                        <div class="content__left--item-img">
+                            <img src="<?php echo get_template_directory_uri();?>/content/img/1.png" width="50px"/>
+                        </div>
                         <div class="content__left--item-info">
                             <span>Dienstverband</span>
                             <p>Loondienst of ZZP</p>
                         </div>
                     </div>
                     <div class="content__left--item">
-                        <img src="<?php echo get_template_directory_uri();?>/content/img/2.png" width="36px"/>
+                        <div class="content__left--item-img">
+                            <img src="<?php echo get_template_directory_uri();?>/content/img/2.png" width="36px"/>
+                        </div>
                         <div class="content__left--item-info">
                             <span>Regio</span>
                             <p>Utrecht/N-Z Holland</p>
                         </div>
                     </div>
                     <div class="content__left--item">
-                        <img src="<?php echo get_template_directory_uri();?>/content/img/3.png" width="32px"/>
+                        <div class="content__left--item-img">
+                            <img src="<?php echo get_template_directory_uri();?>/content/img/3.png" width="32px"/>
+                        </div>
                         <div class="content__left--item-info">
                             <span>Team</span>
                             <p>Alleen/met je maat</p>
@@ -71,7 +77,7 @@ get_header();?>
 
             <div class="content__right--block">
                 <div class="content__right--block--wrapper">
-                    <a class="horizontalOverlay" href="#">Direct solliciteren</a>
+                    <a class="horizontalOverlay" href="#contact">Direct solliciteren</a>
                     <div class="content__right--block--intro">
                         <h4>Dakkapel monteur</h4>
                         <p>Loondienst of ZZP</p>
@@ -118,9 +124,9 @@ get_header();?>
     </div>
 </section>
 
-<section class="cta">
+<section class="cta" id="contact">
     <div class="cta__container">
-        <div class="cta__wrapper">
+        <div class="cta__wrapper" >
             <div class="cta__form">
                 <h4>Hebben we een match?</h4>
                 <p>Solliciteer dan via onderstaand formulier of stuur een e-mail naar <a href="mailto:werkenbij@ruiterdakkapellen.nl">werkenbij@ruiterdakkapellen.nl</a></p>
@@ -168,10 +174,23 @@ get_header();?>
 <section class="newsletter">
     <div class="newsletter__container">
         <div class="newsletter__left">
-            
+            <h3>
+                Is dit toch niet jouw vacature?
+            </h3>
+            <p>
+                Laat je e-mailadres achter en blijf op de hoogte van onze nieuwste vacatures!
+            </p>
         </div>
         <div class="newsletter__right">
-
+            <form>
+                <div class="newsletter__right--row">
+                <input type="email" name="email" id="email" placeholder="E-mailadres">
+                <input type="submit" value="Verzenden">
+                </div>
+                <div class="newsletter__right--row">
+                    <input type="checkbox" name="newsletter" id="newsletter"><label for="newsletter">Ja, ik ga akkoord met de privacyverklaring</label>
+                </div>
+            </form>
         </div>
     </div>
 </section>

@@ -28,7 +28,10 @@
 	<header id="masthead" class="header">
 		<div class="header__top">
 			<div class="header__top--container">
-				<p>Leuke slogan blabla</p>
+				<div class="header__top--logo">
+					<img src="<?php echo get_template_directory_uri();?>/content/img/ruiter_logo.png" width="50px" alt="Ruiter Logo"/>
+				</div>
+				<p>Ruiter Dakkapellen, ruimte om te groeien</p>
 			</div>
 		</div>
 		<div class="header__nav">

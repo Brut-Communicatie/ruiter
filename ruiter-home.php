@@ -170,6 +170,7 @@ get_header();?>
                         </div>
                 </div>
             </form>
+            <h4>Zo verloopt jouw sollicitatie</h4>
             <div class="cta__journey">
                 <div class="cta__journey--line"></div>
                 <div class="cta__journey--item">

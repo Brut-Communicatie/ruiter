@@ -105,7 +105,7 @@ $ruiter-grijs: #222c33;
 $ruiter-lichtgrijs: #9c9b9b;
 $ruiter-banner: #edf0f0;
 $containerWidth: 1140px;
-
+$tabletBreakpoint: 900px;
 $paddingContainer: 20px;
 
 $fontStack: 'Droid Sans',
@@ -153,9 +153,29 @@ sans-serif;
 		height: 3rem;
 		background-color: #fff;
 		display: block;
-
+		border-top: 5px solid $ruiter-geel;
+		&--logo{
+			background-color: #fff;
+			// height: 5rem;
+			width: fit-content;
+			@include Flex(center, center);
+			padding: 1rem 2rem 1rem;
+			img{
+				width: 55px;
+			}
+		}
 		&--container {
 			@include Container;
+			@include Flex(flex-start, flex-start, row);
+
+			p{
+				@include Font;
+				margin: 0;
+				margin-top: 10px;
+				margin-left: 2rem;
+				font-size: 16px;
+				font-weight: 600;
+			}
 		}
 	}
 
@@ -261,7 +281,7 @@ sans-serif;
 		}
 
 		&--item {
-			width: calc(100% / 3 - 10px);
+			width: 100%;
 			margin-right: 10px;
 			@include Flex(flex-start, center);
 			@include Font;
@@ -519,6 +539,11 @@ sans-serif;
 	&__container {
 		@include Container;
 		padding: 2rem 0;
+		h4 {
+			@include Font;
+			margin: 0;
+			font-size: 20px;
+		}
 	}
 
 	&__wrapper {
@@ -558,12 +583,26 @@ sans-serif;
 			@include Flex(space-between, flex-start);
 			width: 100%;
 			margin-bottom: 10px;
+
+			@include Responsive($tabletBreakpoint){
+				flex-direction: column;
+				justify-content: flex-start;
+				align-items: flex-start;
+			}
 		}
 		&--item{
 			flex-grow: 1;
 			&:nth-child(2){
 				margin-left: 10px;
 				@include Flex(flex-start, flex-start);
+
+				@include Responsive($tabletBreakpoint){
+					margin-left: 0;
+					margin-top: 10px;
+				}
+			}
+			@include Responsive($tabletBreakpoint){
+				width: 100%;
 			}
 			input{
 				width: 100%;
@@ -585,6 +624,11 @@ sans-serif;
 				font-size: 18px;
 				border: 0;
 				@include Font;
+
+				&:hover{
+					cursor: pointer;
+					opacity: 0.9;
+				}
 			}
 		}
 	}
@@ -595,6 +639,10 @@ sans-serif;
 		width: 100%;
 		margin-top: 2rem;
 
+		@include Responsive($containerWidth){
+			@include Flex(flex-start, flex-start, column);
+		}
+
 		&--line {
 			width: 100%;
 			height: 2px;
@@ -603,12 +651,24 @@ sans-serif;
 			position: absolute;
 			top: 43%;
 			left: 0;
+
+			@include Responsive($containerWidth){
+				height: 100%;
+				width: 2px;
+				top: 0;
+				left: 12.5px;
+			}
 		}
 
 		&--item {
 			width: calc(100% / 5 - 10px);
 			position: relative;
 			z-index:1;
+
+			@include Responsive($containerWidth){
+				width: 100%;
+
+			}
 		}
 
 		&--circle{
@@ -618,6 +678,11 @@ sans-serif;
 			background-color: $ruiter-geel;
 			border: 2px solid $ruiter-grijs;
 			margin: 1rem 0;
+
+			@include Responsive($containerWidth){
+				order: 0;
+				margin-right: 20px;
+			}
 		}
 
 		&--content {
@@ -626,11 +691,20 @@ sans-serif;
 			@include Font;
 			color: $ruiter-grijs;
 
+			@include Responsive($containerWidth){
+				@include Flex(flex-start, center, row);
+				flex-wrap: wrap;
+			}
+
 			h4 {
 				margin: 0;
 				text-align: center;
 				font-size: 18px;
 				font-weight: 200;
+
+				@include Responsive($containerWidth){
+					order: 1;
+				}
 			}
 
 			p {
@@ -639,6 +713,14 @@ sans-serif;
 				text-align: center;
 				font-size: 14px;
 				width: 100%;
+
+				@include Responsive($containerWidth){
+					order: 2;
+					width: 100%;
+					text-align:left;
+					margin-left: 45px;
+					margin-top: -10px;
+				}
 			}
 		}
 	}

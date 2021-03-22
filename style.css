@@ -947,17 +947,44 @@ textarea {
 	height: 3rem;
 	background-color: #fff;
 	display: block;
+	border-top: 5px solid #ffe017;
+}
+
+.header__top--logo {
+	background-color: #fff;
+	width: fit-content;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem 2rem 1rem;
+}
+
+.header__top--logo img {
+	width: 55px;
 }
 
 .header__top--container {
 	width: 1140px;
 	margin: 0 auto;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: row;
 }
 
 @media screen and (max-width: 1140px) {
 	.header__top--container {
 		width: calc(100% - 2rem);
 	}
+}
+
+.header__top--container p {
+	font-family: "Droid Sans", Verdana, sans-serif;
+	margin: 0;
+	margin-top: 10px;
+	margin-left: 2rem;
+	font-size: 16px;
+	font-weight: 600;
 }
 
 .header__nav {
@@ -1101,7 +1128,7 @@ textarea {
 }
 
 .content__left--item {
-	width: calc(100% / 3 - 10px);
+	width: 100%;
 	margin-right: 10px;
 	display: flex;
 	justify-content: flex-start;
@@ -1400,6 +1427,12 @@ textarea {
 	}
 }
 
+.cta__container h4 {
+	font-family: "Droid Sans", Verdana, sans-serif;
+	margin: 0;
+	font-size: 20px;
+}
+
 .cta__wrapper {
 	margin-left: 20px;
 }
@@ -1445,6 +1478,14 @@ textarea {
 	margin-bottom: 10px;
 }
 
+@media screen and (max-width: 900px) {
+	.cta__form--row {
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+}
+
 .cta__form--item {
 	flex-grow: 1;
 }
@@ -1454,6 +1495,19 @@ textarea {
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
+}
+
+@media screen and (max-width: 900px) {
+	.cta__form--item:nth-child(2) {
+		margin-left: 0;
+		margin-top: 10px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.cta__form--item {
+		width: 100%;
+	}
 }
 
 .cta__form--item input {
@@ -1479,6 +1533,11 @@ textarea {
 	font-family: "Droid Sans", Verdana, sans-serif;
 }
 
+.cta__form--item input[type="submit"]:hover {
+	cursor: pointer;
+	opacity: 0.9;
+}
+
 .cta__journey {
 	display: flex;
 	justify-content: space-around;
@@ -1487,6 +1546,15 @@ textarea {
 	position: relative;
 	width: 100%;
 	margin-top: 2rem;
+}
+
+@media screen and (max-width: 1140px) {
+	.cta__journey {
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		flex-direction: column;
+	}
 }
 
 .cta__journey--line {
@@ -1499,10 +1567,25 @@ textarea {
 	left: 0;
 }
 
+@media screen and (max-width: 1140px) {
+	.cta__journey--line {
+		height: 100%;
+		width: 2px;
+		top: 0;
+		left: 12.5px;
+	}
+}
+
 .cta__journey--item {
 	width: calc(100% / 5 - 10px);
 	position: relative;
 	z-index: 1;
+}
+
+@media screen and (max-width: 1140px) {
+	.cta__journey--item {
+		width: 100%;
+	}
 }
 
 .cta__journey--circle {
@@ -1512,6 +1595,13 @@ textarea {
 	background-color: #ffe017;
 	border: 2px solid #222c33;
 	margin: 1rem 0;
+}
+
+@media screen and (max-width: 1140px) {
+	.cta__journey--circle {
+		order: 0;
+		margin-right: 20px;
+	}
 }
 
 .cta__journey--content {
@@ -1524,11 +1614,27 @@ textarea {
 	color: #222c33;
 }
 
+@media screen and (max-width: 1140px) {
+	.cta__journey--content {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+}
+
 .cta__journey--content h4 {
 	margin: 0;
 	text-align: center;
 	font-size: 18px;
 	font-weight: 200;
+}
+
+@media screen and (max-width: 1140px) {
+	.cta__journey--content h4 {
+		order: 1;
+	}
 }
 
 .cta__journey--content p {
@@ -1537,6 +1643,16 @@ textarea {
 	text-align: center;
 	font-size: 14px;
 	width: 100%;
+}
+
+@media screen and (max-width: 1140px) {
+	.cta__journey--content p {
+		order: 2;
+		width: 100%;
+		text-align: left;
+		margin-left: 45px;
+		margin-top: -10px;
+	}
 }
 
 .horizontalOverlay {

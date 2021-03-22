@@ -154,21 +154,24 @@ sans-serif;
 		background-color: #fff;
 		display: block;
 		border-top: 5px solid $ruiter-geel;
-		&--logo{
+
+		&--logo {
 			background-color: #fff;
 			// height: 5rem;
 			width: fit-content;
 			@include Flex(center, center);
 			padding: 1rem 2rem 1rem;
-			img{
+
+			img {
 				width: 55px;
 			}
 		}
+
 		&--container {
 			@include Container;
 			@include Flex(flex-start, flex-start, row);
 
-			p{
+			p {
 				@include Font;
 				margin: 0;
 				margin-top: 10px;
@@ -424,8 +427,8 @@ sans-serif;
 					}
 				}
 
-				&:last-child{
-					p{
+				&:last-child {
+					p {
 						&:before {
 							content: url("content/img/arrow-right-solid.svg");
 							position: absolute;
@@ -482,6 +485,7 @@ sans-serif;
 				width: 55%;
 				height: 10rem;
 				color: $ruiter-grijs;
+
 				h4 {
 					@include Font;
 					margin: 0 0 5px;
@@ -510,18 +514,19 @@ sans-serif;
 
 					transition: opacity .25s ease;
 
-					&:first-child{
+					&:first-child {
 						background-color: #53ae48;
 					}
-					&:last-child{
+
+					&:last-child {
 						background-color: #ab2c2a;
 					}
 
-					img{
+					img {
 						filter: invert(100%);
 					}
 
-					&:hover{
+					&:hover {
 						opacity: 0.8;
 					}
 				}
@@ -535,10 +540,12 @@ sans-serif;
 	width: 100%;
 	margin-top: 3rem;
 	background-color: $ruiter-banner;
+	padding: 1rem 0 2rem;
 
 	&__container {
 		@include Container;
 		padding: 2rem 0;
+
 		h4 {
 			@include Font;
 			margin: 0;
@@ -574,47 +581,52 @@ sans-serif;
 			}
 		}
 
-		&--content{
+		&--content {
 			margin-top: 1rem;
 			@include Flex(flex-start, flex-start, column);
 		}
 
-		&--row{
+		&--row {
 			@include Flex(space-between, flex-start);
 			width: 100%;
 			margin-bottom: 10px;
 
-			@include Responsive($tabletBreakpoint){
+			@include Responsive($tabletBreakpoint) {
 				flex-direction: column;
 				justify-content: flex-start;
 				align-items: flex-start;
 			}
 		}
-		&--item{
+
+		&--item {
 			flex-grow: 1;
-			&:nth-child(2){
+
+			&:nth-child(2) {
 				margin-left: 10px;
 				@include Flex(flex-start, flex-start);
 
-				@include Responsive($tabletBreakpoint){
+				@include Responsive($tabletBreakpoint) {
 					margin-left: 0;
 					margin-top: 10px;
 				}
 			}
-			@include Responsive($tabletBreakpoint){
+
+			@include Responsive($tabletBreakpoint) {
 				width: 100%;
 			}
-			input{
+
+			input {
 				width: 100%;
-				padding: 10px;
-				@include Font;
-			}
-			textarea{
 				padding: 10px;
 				@include Font;
 			}
 
-			input[type="submit"]{
+			textarea {
+				padding: 10px;
+				@include Font;
+			}
+
+			input[type="submit"] {
 				width: fit-content;
 				margin-left: auto;
 				background-color: $ruiter-grijs;
@@ -625,7 +637,7 @@ sans-serif;
 				border: 0;
 				@include Font;
 
-				&:hover{
+				&:hover {
 					cursor: pointer;
 					opacity: 0.9;
 				}
@@ -639,7 +651,7 @@ sans-serif;
 		width: 100%;
 		margin-top: 2rem;
 
-		@include Responsive($containerWidth){
+		@include Responsive($containerWidth) {
 			@include Flex(flex-start, flex-start, column);
 		}
 
@@ -652,7 +664,7 @@ sans-serif;
 			top: 43%;
 			left: 0;
 
-			@include Responsive($containerWidth){
+			@include Responsive($containerWidth) {
 				height: 100%;
 				width: 2px;
 				top: 0;
@@ -663,15 +675,15 @@ sans-serif;
 		&--item {
 			width: calc(100% / 5 - 10px);
 			position: relative;
-			z-index:1;
+			z-index: 1;
 
-			@include Responsive($containerWidth){
+			@include Responsive($containerWidth) {
 				width: 100%;
 
 			}
 		}
 
-		&--circle{
+		&--circle {
 			width: 25px;
 			height: 25px;
 			border-radius: 50%;
@@ -679,7 +691,7 @@ sans-serif;
 			border: 2px solid $ruiter-grijs;
 			margin: 1rem 0;
 
-			@include Responsive($containerWidth){
+			@include Responsive($containerWidth) {
 				order: 0;
 				margin-right: 20px;
 			}
@@ -691,7 +703,7 @@ sans-serif;
 			@include Font;
 			color: $ruiter-grijs;
 
-			@include Responsive($containerWidth){
+			@include Responsive($containerWidth) {
 				@include Flex(flex-start, center, row);
 				flex-wrap: wrap;
 			}
@@ -702,7 +714,7 @@ sans-serif;
 				font-size: 18px;
 				font-weight: 200;
 
-				@include Responsive($containerWidth){
+				@include Responsive($containerWidth) {
 					order: 1;
 				}
 			}
@@ -714,15 +726,53 @@ sans-serif;
 				font-size: 14px;
 				width: 100%;
 
-				@include Responsive($containerWidth){
+				@include Responsive($containerWidth) {
 					order: 2;
 					width: 100%;
-					text-align:left;
+					text-align: left;
 					margin-left: 45px;
 					margin-top: -10px;
 				}
 			}
 		}
+	}
+}
+
+.bottom {
+	background-color: $ruiter-geel;
+	height: 30rem;
+	display: block;
+
+	&__container {
+		@include Container;
+		@include Flex(space-between, flex-start);
+	}
+
+	&__right {
+		width: 30%;
+		background-color: $ruiter-grijs;
+		color: $ruiter-geel;
+		@include Font;
+		transform: translateY(-2rem);
+		padding: 2rem;
+
+		h3 {
+			margin: 0 0 30px;
+			font-size: 28px;
+			line-height: 32px;
+			font-weight: 700;
+
+		}
+
+		p {
+			color: #fff;
+			margin: 0;
+			font-size: 16px;
+		}
+	}
+
+	&__left {
+		width: 60%;
 	}
 }
 

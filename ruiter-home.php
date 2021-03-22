@@ -98,9 +98,6 @@ get_header();?>
                     </div>
                 </div>
             </div>
-
-
-
             <div class="content__right--contact">
                 <div class="content__right--contact-wrapper">
                     <div class="content__right--contact-img">
@@ -129,86 +126,41 @@ get_header();?>
                 <p>Solliciteer dan via onderstaand formulier of stuur een e-mail naar <a href="mailto:werkenbij@ruiterdakkapellen.nl">werkenbij@ruiterdakkapellen.nl</a></p>
             </div>
             <form method="POST">
-                <div class="cta__form--content">
-                        <div class="cta__form--row">
-                            <div class="cta__form--item">
-                                <input placeholder="Voornaam" type="text" name="name" id="name">
-                            </div>
-                            <div class="cta__form--item">
-                                <input placeholder="Achternaam"  type="text" name="achternaam" id="achternaam">
-                            </div>
-                        </div>
-
-                        <div class="cta__form--row">
-                            <div class="cta__form--item">
-                                <input type="email" placeholder="Email" name="email" id="email">
-                            </div>
-                            <div class="cta__form--item">
-                                <input type="tel" placeholder="Telefoon" name="telephone" id="tel">
-                            </div>
-                        </div>
-
-                        <div class="cta__form--row">
-                            <div class="cta__form--item">
-                                <input type="text" placeholder="Woonplaats"  name="woonplaats" id="woonplaats">
-                            </div>
-                        </div>
-
-                        <div class="cta__form--row">
-                            <div class="cta__form--item">
-                                <textarea name="motivatie" placeholder="Korte movitatie" id="motivatie" cols="30" rows="10"></textarea>
-                            </div>
-                        </div>
-
-                        <div class="cta__form--row">
-                            <div class="cta__form--item">
-                                
-                            </div>
-                            <div class="cta__form--item">
-                                <input type="submit" value="Verzenden">
-                            </div>
-                        </div>
-                </div>
+              <?php get_template_part('template-parts/content' , 'form');?>
             </form>
             <h4>Zo verloopt jouw sollicitatie</h4>
-            <div class="cta__journey">
-                <div class="cta__journey--line"></div>
-                <div class="cta__journey--item">
-                    <div class="cta__journey--content">
-                        <h4>Je solliciteert</h4>
-                        <div class="cta__journey--circle"></div>
-                        <p>Hier kijken we nu al naar uit!</p>
-                    </div>
-                </div>
-                <div class="cta__journey--item">
-                    <div class="cta__journey--content">
-                        <h4>Telefonisch contact</h4>
-                        <div class="cta__journey--circle"></div>
-                        <p>We bellen je voor een eerste kennismaking.</p>
-                    </div>
-                </div>
-                <div class="cta__journey--item">
-                    <div class="cta__journey--content">
-                        <h4>In het ‘echt’</h4>
-                        <div class="cta__journey--circle"></div>
-                        <p>Tijd voor een echte kennismaking op ons bedrijf.</p>
-                    </div>
-                </div>
-                <div class="cta__journey--item">
-                    <div class="cta__journey--content">
-                        <h4>Vervolggesprek</h4>
-                        <div class="cta__journey--circle"></div>
-                        <p>We bespreken het salaris en andere arbeidsvoorwaarden.</p>
-                    </div>
-                </div>
-                <div class="cta__journey--item">
-                    <div class="cta__journey--content">
-                        <h4>Aan de slag</h4>
-                        <div class="cta__journey--circle"></div>
-                        <p>Jouw jongensdroom komt nu uit.</p>
-                    </div>
-                </div>
-            </div>
+            <?php get_template_part('template-parts/content', 'journey');?>
+        </div>
+    </div>
+</section>
+
+<section class="bottom">
+    <div class="bottom__container">
+        <div class="bottom__left">
+            <h3>
+                Over Ruiter Dakkapellen
+            </h3>
+            <p>
+            Ruiter is marktleider in Nederland en staat voor kwaliteit en betrouwbaarheid. Al ruim 40 jaar produceren en monteren wij meer dan 70 dakkapellen per week. Dit doen we voor consumenten, woningbouwcorporaties, dealers, bouwmarkten, aannemers, onderhoudsbedrijven en nog vele andere relaties. Met meerdere showrooms verspreid in het land bedienen wij een groot deel van Nederland, maar met name de Randstad. 
+            </p>
+            <a href="#" target="_blank" rel="noopener noreferrer">> Meer informatie over Ruiter Dakkapellen.</a>
+        </div>
+
+        <div class="bottom__right">
+            <h3>
+                Hé ZZP’er,</br>
+                wist je dat...
+            </h3>
+            <p>
+                …je meerdere opdrachtgevers moet 
+                hebben? Het is natuurlijk heel fijn als 
+                één bedrijf volop werk voor je heeft, 
+                maar als ZZP’er ben je
+                belastingtechnisch verplicht om voor 
+                meerdere opdrachtgevers te werken. 
+                Combineer jij jouw huidige baan met 
+                werken bij Ruiter? 
+            </p>
         </div>
     </div>
 </section>

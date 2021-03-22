@@ -1413,6 +1413,7 @@ textarea {
 	width: 100%;
 	margin-top: 3rem;
 	background-color: #edf0f0;
+	padding: 1rem 0 2rem;
 }
 
 .cta__container {
@@ -1653,6 +1654,52 @@ textarea {
 		margin-left: 45px;
 		margin-top: -10px;
 	}
+}
+
+.bottom {
+	background-color: #ffe017;
+	height: 30rem;
+	display: block;
+}
+
+.bottom__container {
+	width: 1140px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+@media screen and (max-width: 1140px) {
+	.bottom__container {
+		width: calc(100% - 2rem);
+	}
+}
+
+.bottom__right {
+	width: 30%;
+	background-color: #222c33;
+	color: #ffe017;
+	font-family: "Droid Sans", Verdana, sans-serif;
+	transform: translateY(-2rem);
+	padding: 2rem;
+}
+
+.bottom__right h3 {
+	margin: 0 0 30px;
+	font-size: 28px;
+	line-height: 32px;
+	font-weight: 700;
+}
+
+.bottom__right p {
+	color: #fff;
+	margin: 0;
+	font-size: 16px;
+}
+
+.bottom__left {
+	width: 60%;
 }
 
 .horizontalOverlay {

@@ -128,16 +128,83 @@ get_header();?>
                 <h4>Hebben we een match?</h4>
                 <p>Solliciteer dan via onderstaand formulier of stuur een e-mail naar <a href="mailto:werkenbij@ruiterdakkapellen.nl">werkenbij@ruiterdakkapellen.nl</a></p>
             </div>
+            <form method="POST">
+                <div class="cta__form--content">
+                        <div class="cta__form--row">
+                            <div class="cta__form--item">
+                                <input placeholder="Voornaam" type="text" name="name" id="name">
+                            </div>
+                            <div class="cta__form--item">
+                                <input placeholder="Achternaam"  type="text" name="achternaam" id="achternaam">
+                            </div>
+                        </div>
 
+                        <div class="cta__form--row">
+                            <div class="cta__form--item">
+                                <input type="email" placeholder="Email" name="email" id="email">
+                            </div>
+                            <div class="cta__form--item">
+                                <input type="tel" placeholder="Telefoon" name="telephone" id="tel">
+                            </div>
+                        </div>
 
+                        <div class="cta__form--row">
+                            <div class="cta__form--item">
+                                <input type="text" placeholder="Woonplaats"  name="woonplaats" id="woonplaats">
+                            </div>
+                        </div>
 
+                        <div class="cta__form--row">
+                            <div class="cta__form--item">
+                                <textarea name="motivatie" placeholder="Korte movitatie" id="motivatie" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="cta__form--row">
+                            <div class="cta__form--item">
+                                
+                            </div>
+                            <div class="cta__form--item">
+                                <input type="submit" value="Verzenden">
+                            </div>
+                        </div>
+                </div>
+            </form>
             <div class="cta__journey">
                 <div class="cta__journey--line"></div>
                 <div class="cta__journey--item">
                     <div class="cta__journey--content">
-                        <h4>Je solliciteerd</h4>
+                        <h4>Je solliciteert</h4>
                         <div class="cta__journey--circle"></div>
-                        <p>Content over het onderdeel</p>
+                        <p>Hier kijken we nu al naar uit!</p>
+                    </div>
+                </div>
+                <div class="cta__journey--item">
+                    <div class="cta__journey--content">
+                        <h4>Telefonisch contact</h4>
+                        <div class="cta__journey--circle"></div>
+                        <p>We bellen je voor een eerste kennismaking.</p>
+                    </div>
+                </div>
+                <div class="cta__journey--item">
+                    <div class="cta__journey--content">
+                        <h4>In het ‘echt’</h4>
+                        <div class="cta__journey--circle"></div>
+                        <p>Tijd voor een echte kennismaking op ons bedrijf.</p>
+                    </div>
+                </div>
+                <div class="cta__journey--item">
+                    <div class="cta__journey--content">
+                        <h4>Vervolggesprek</h4>
+                        <div class="cta__journey--circle"></div>
+                        <p>We bespreken het salaris en andere arbeidsvoorwaarden.</p>
+                    </div>
+                </div>
+                <div class="cta__journey--item">
+                    <div class="cta__journey--content">
+                        <h4>Aan de slag</h4>
+                        <div class="cta__journey--circle"></div>
+                        <p>Jouw jongensdroom komt nu uit.</p>
                     </div>
                 </div>
             </div>

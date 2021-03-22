@@ -720,6 +720,8 @@ html {
 			&-item{
 				width: 100%;
 				padding: 2.5px 0;
+				position: relative;
+				@include Flex(flex-start, center);
 				input[type="checkbox"]{
 					width: fit-content;
 					margin-right: 10px;
@@ -735,9 +737,14 @@ html {
 				}
 
 				input[type="file"]{
-					width: 30%;
+					width: fit-content;
 					padding: 0;
 					line-height: 16px;
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: 100%;
+					opacity: 0;
 					&:hover{
 						cursor: pointer;
 					}
@@ -745,7 +752,7 @@ html {
 
 				svg{
 					width: 15px;
-					margin-right: 2px;
+					margin-right: 10px;
 					height: 15px;
 					path{
 						fill: $ruiter-grijs;
@@ -1099,23 +1106,89 @@ html {
 	transform: translateY(0);
 }
 
-.input__file::-webkit-file-upload-button {
-	visibility: hidden;
+  .footer{
+		width: 100%;
+		padding: 2rem 0;
+		&__container{
+			@include Container;
+			@include Flex(space-between, center);
+
+			@include Responsive($tabletBreakpoint){
+				@include Flex(flex-start, flex-start, column);
+			}
+		}
+		&__item{
+			width: calc(20% - 10px);
+
+			&:nth-child(2){
+				width: calc(60% - 10px);
+			}
+			&:nth-child(3){
+				width: 10%;
+			}
+
+			@include Responsive($tabletBreakpoint){
+				width: 100% !important;
+				margin-bottom: 1rem;
+			}
+		}
+		&__navigation{
+			@include Flex(space-evenly, flex-start);
+			width: 100%;
+			a, a:active, a:link, a:visited{
+				width: fit-content;
+				@include Font;
+				text-decoration: none;
+				color: $ruiter-grijs;
+				@include Responsive($tabletBreakpoint){
+					margin-bottom: 10px;
+				}
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+			@include Responsive($tabletBreakpoint){
+				@include Flex(flex-start, flex-start, column);
+			}
+		}
+		&__social{
+			&--wrapper{
+				@include Flex(space-around, flex-start);
+
+				@include Responsive($tabletBreakpoint){
+					@include Flex(flex-start, flex-start);
+				}
+			}
+
+			width: 30px;
+			height: 30px;
+			@include Flex(center, center);
+			background-color: #4a6ea9;
+			transition: opacity .25s ease;
+			@include Responsive($tabletBreakpoint){
+				margin-right: 10px;
+			}
+
+			img{
+				filter: invert(100%);
+			}
+			&:hover{
+				opacity: 0.9;
+			}
+			&:nth-child(1){
+				img{
+					width: 12px;
+				}
+			}
+			&:nth-child(2){
+				background-color: #5dd7fc;
+			}
+			&:nth-child(3){
+				background-color: #c8312b;
+			}
+		}
   }
-  .input__file::before {
-	content: 'CV uploaden (verplicht)';
-	display: inline-block;
-	outline: none;
-	white-space: nowrap;
-	-webkit-user-select: none;
-	cursor: pointer;
-	
-	@include Font;
-	font-size: 16px;
-  }
-  .input__file:hover::before {
-	border-color: black;
-  }
-  .input__file:active::before {
-	background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+
+  .page{
+	  margin: 0;
   }

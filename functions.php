@@ -178,3 +178,9 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+function brut_loadscript() {
+	  wp_enqueue_script('brutjs', get_template_directory_uri() . '/js/main.js', array('jquery'), '', false);
+
+  }
+  
+  add_action('wp_enqueue_scripts', 'brut_loadscript');

@@ -25,5 +25,26 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'ruiterdakkapellen' ); ?></a>
 
-	<header id="masthead" class="site-header">
+	<header id="masthead" class="header">
+		<div class="header__top">
+			<div class="header__top--container">
+				<p>Leuke slogan blabla</p>
+			</div>
+		</div>
+		<div class="header__nav">
+			<div class="header__nav--container">
+				<div class="header__nav--items">
+					<a class="borderFade" href="#" target="_blank" rel="norefferer noopener">Alle vacatures</a>
+					<a class="borderFade" href="#" target="_blank" rel="norefferer noopener">Over ons</a>
+				</div>
+			</div>
+		</div>
+		<div class="header__container">
+			<h1>
+				Werk voor </br>
+				grote jongens!
+			</h1>
+			<p>Laat jouw jongensdroom hier uitkomen</p>
+			<a>Dakkapel Monteur</a>
+		</div>
 	</header><!-- #masthead -->

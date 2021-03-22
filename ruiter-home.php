@@ -1,7 +1,7 @@
 <?php
 
 
-//Template name: Vacaturepogina
+//Template name: Vacaturepagina
 
 get_header();?>
 
@@ -45,9 +45,9 @@ get_header();?>
                             Heb je een <strong>stoere baan op grote hoogte</strong></br>
                             Kom elke dag <strong>bij klanten thuis</strong></br>
                             Ervaar je <strong>veel afwisseling</strong> in je werkzaamheden</br>
-                            Ben je met z'n tweeen een <strong>hecht team</strong></br>
+                            Ben je met z'n tweeën een <strong>hecht team</strong></br>
                             Krijg je <strong>alle ruimte om te groeien</strong></br>
-                            Kan je in <strong>loondiesnt of als ZZP'er</strong> aan de slag
+                            Kan je in <strong>loondienst of als ZZP'er</strong> aan de slag
                         </h3>
                     </div>
 

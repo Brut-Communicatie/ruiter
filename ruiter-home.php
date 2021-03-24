@@ -48,12 +48,12 @@ get_header();?>
                     <div class="content__left--summary">
                         <h4>Als Dakkapel Monteur bij Ruiter:</h4>
                         <h3>
-                            Heb je een <strong>stoere baan op grote hoogte</strong></br>
-                            Kom elke dag <strong>bij klanten thuis</strong></br>
-                            Ervaar je <strong>veel afwisseling</strong> in je werkzaamheden</br>
-                            Ben je met z'n tweeën een <strong>hecht team</strong></br>
-                            Krijg je <strong>alle ruimte om te groeien</strong></br>
-                            Kan je in <strong>loondienst of als ZZP'er</strong> aan de slag
+                            <p>Heb je een <strong>stoere baan op grote hoogte</strong></p>
+                            <p>Kom elke dag <strong>bij klanten thuis</strong></p>
+                            <p>Ervaar je <strong>veel afwisseling</strong> in je werkzaamheden</p>
+                            <p>Ben je met z'n tweeën een <strong>hecht team</strong></p>
+                            <p>Krijg je <strong>alle ruimte om te groeien</strong></p>
+                            <p>Kan je in <strong>loondienst of als ZZP'er</strong> aan de slag</p>
                         </h3>
                     </div>
 
@@ -131,9 +131,10 @@ get_header();?>
                 <h4>Hebben we een match?</h4>
                 <p>Solliciteer dan via onderstaand formulier of stuur een e-mail naar <a href="mailto:werkenbij@ruiterdakkapellen.nl">werkenbij@ruiterdakkapellen.nl</a></p>
             </div>
-            <form method="POST">
-              <?php get_template_part('template-parts/content' , 'form');?>
-            </form>
+            <?php 
+                $form = get_field('shortcode');
+                echo do_shortcode($form);
+            ?>
             <h4>Zo verloopt jouw sollicitatie</h4>
             <?php get_template_part('template-parts/content', 'journey');?>
         </div>
@@ -182,15 +183,10 @@ get_header();?>
             </p>
         </div>
         <div class="newsletter__right">
-            <form>
-                <div class="newsletter__right--row">
-                <input type="email" name="email" id="email" placeholder="E-mailadres">
-                <input type="submit" value="Verzenden">
-                </div>
-                <div class="newsletter__right--row">
-                    <input type="checkbox" name="newsletter" id="newsletter"><label for="newsletter">Ja, ik ga akkoord met de privacyverklaring</label>
-                </div>
-            </form>
+        <?php 
+                $nieuwsbrief = get_field('nieuwsbrief');
+                echo do_shortcode($nieuwsbrief);
+            ?>
         </div>
     </div>
 </section>

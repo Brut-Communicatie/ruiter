@@ -32,22 +32,24 @@
 					<img src="<?php echo get_template_directory_uri();?>/content/img/ruiter_logo.png" width="50px" alt="Ruiter Logo"/>
 				</div>
 				<p>Ruiter Dakkapellen, ruimte om te groeien</p>
-			</div>
-		</div>
-		<div class="header__nav">
-			<div class="header__nav--container">
+				<div class="header__nav">
+	
 				<div class="header__nav--items">
 					<a class="borderFade" href="https://www.ruiterdakkapellen.nl/vacatures" target="_blank" rel="norefferer noopener">Alle vacatures</a>
 					<a class="borderFade" href="https://www.ruiterdakkapellen.nl/over-ons" target="_blank" rel="norefferer noopener">Over ons</a>
-				</div>
+		
 			</div>
 		</div>
+			</div>
+		</div>
+	
+		<img class="header__image" src="<?php echo get_template_directory_uri(  );?>/content/img/achtergrond.png" width="100%" alt="Ruiter header afbeelding" />
 		<div class="header__container">
 			<h1>
 				Werk voor </br>
 				grote jongens!
 			</h1>
 			<p>Laat jouw jongensdroom hier uitkomen</p>
-			<a>Dakkapel Monteur</a>
+			<a>Dakkapel Monteurs</a>
 		</div>
 	</header><!-- #masthead -->

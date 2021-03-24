@@ -2297,6 +2297,7 @@ html {
 
 .footer__navigation a:hover, .footer__navigation a:active:hover, .footer__navigation a:link:hover, .footer__navigation a:visited:hover {
 	text-decoration: underline;
+	color: #8AD0C8;
 }
 
 @media screen and (max-width: 900px) {

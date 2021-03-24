@@ -49,7 +49,7 @@ get_header();?>
                         <h4>Als Dakkapel Monteur bij Ruiter:</h4>
                         <h3>
                             <p>Heb je een <strong>stoere baan op grote hoogte</strong></p>
-                            <p>Kom elke dag <strong>bij klanten thuis</strong></p>
+                            <p>Kom je elke dag <strong>bij klanten thuis</strong></p>
                             <p>Ervaar je <strong>veel afwisseling</strong> in je werkzaamheden</p>
                             <p>Ben je met z'n tweeën een <strong>hecht team</strong></p>
                             <p>Krijg je <strong>alle ruimte om te groeien</strong></p>

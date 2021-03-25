@@ -255,6 +255,10 @@ html {
 				text-decoration: none;
 				font-weight: 700;
 
+				@include Responsive(500px){
+					margin-left: 0.5rem;
+				}
+
 				&:hover{
 					color: $ruiter-hover;
 				}
@@ -445,8 +449,9 @@ html {
 					font-size: 24px;
 
 					@include Responsive(600px){
-						margin-bottom: 5px;
+						margin-bottom: 11px;
 						font-size: 18px;
+						line-height: 21px;
 					}
 				}
 			}
@@ -498,11 +503,11 @@ html {
 			background-color: $ruiter-geel;
 			border: 1px solid $ruiter-grijs;
 			width: 100%;
-
-			&--wrapper {
-				width: 85%;
-				margin: 2rem auto;
-				@include Flex(flex-start, flex-start, column);
+			&--btn{
+				@include Flex(center, center);
+				background-color: #fff;
+				width: 100%;
+				padding: 4rem 0;
 
 				a,
 				a:active,
@@ -513,7 +518,7 @@ html {
 					background-color: $ruiter-hover;
 					color: #fff;
 					text-decoration: none;
-					width: 100%;
+					width: auto;
 					text-align: center;
 					font-size: 20px;
 
@@ -522,6 +527,13 @@ html {
 					}
 				}
 			}
+			
+			&--wrapper {
+				width: 85%;
+				margin: 2rem auto;
+				@include Flex(flex-start, flex-start, column);
+				}
+			
 
 			&--opsomming {
 				@include Flex(flex-start, flex-start, column);
@@ -594,7 +606,13 @@ html {
 			width: 100%;
 
 			@include Flex(center, center);
+			@include Responsive($containerWidth){
+				width: auto;
+			}
 
+			@include Responsive($tabletBreakpoint){
+				width: 100%;
+			}
 			&-wrapper {
 				width: 85%;
 				@include Flex(space-between, center);
@@ -604,6 +622,11 @@ html {
 
 			&-img {
 				width: 40%;
+				@include Flex(flex-start, flex-start);
+
+				@include Responsive($tabletBreakpoint){
+					width: 35%;
+				}
 			}
 
 			&-info {
@@ -614,7 +637,7 @@ html {
 
 				h4 {
 					@include Font;
-					margin: 0 0 5px;
+					margin: 0;
 				}
 
 				p {
@@ -636,6 +659,52 @@ html {
 					height: 35px;
 					background-color: #172f5d;
 					padding: 5px;
+					@include Flex(center, center);
+
+					transition: opacity .25s ease;
+
+					&:first-child {
+						background-color: #53ae48;
+					}
+
+					&:last-child {
+						background-color: #ab2c2a;
+					}
+
+					img {
+						filter: invert(100%);
+					}
+
+					&:hover {
+						opacity: 0.8;
+					}
+				}
+			}
+		}
+		&--share{
+			@include Flex(flex-start, flex-start, column);
+			margin-top: 1.5rem;
+			h4{
+				@include Font;
+				margin: 0;
+			}
+
+			p{
+				@include Font;
+				margin: 0;
+			}
+			&-buttons{
+				margin-top: 5px;
+				@include Flex(flex-start, center);
+				a,
+				a:active,
+				a:visited,
+				a:link {
+					width: 35px;
+					height: 35px;
+					background-color: #172f5d;
+					padding: 5px;
+					margin-right: 5px;
 					@include Flex(center, center);
 
 					transition: opacity .25s ease;
@@ -817,6 +886,8 @@ html {
 					top: 0;
 					width: 100%;
 					opacity: 0;
+					margin-bottom: 5px;
+					transform:translateY(-5px);
 					&:hover{
 						cursor: pointer;
 					}
@@ -1073,10 +1144,15 @@ html {
 		.wpcf7{
 			width: 100%;
 		}
+
+		p{
+			margin: 0;
+			width: 100%;
+		}
 		&--row {
 			@include Flex(flex-start, flex-start);
 			width: 100%;
-			
+			margin-bottom: 10px;
 			@include Responsive(500px) {
 				@include Flex(flex-start, flex-start, column);
 			}

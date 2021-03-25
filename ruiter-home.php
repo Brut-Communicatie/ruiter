@@ -73,11 +73,11 @@ get_header();?>
         </div>
         
         <div class="content__right">
-
-
             <div class="content__right--block">
-                <div class="content__right--block--wrapper">
+                <div class="content__right--block--btn">
                     <a class="horizontalOverlay" href="#contact">Direct solliciteren</a>
+                </div>
+                <div class="content__right--block--wrapper">
                     <div class="content__right--block--intro">
                         <h4>Dakkapel monteur</h4>
                         <p>Loondienst of ZZP</p>
@@ -118,6 +118,15 @@ get_header();?>
                             <a href="#"><img src="<?php echo get_template_directory_uri();?>/content/img/envelope-solid.svg" alt="Mail" width="20px"></a>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <div class="content__right--share">
+                <h4>Niets voor jou, wel voor een maat?</h4>
+                <p>Laat het ze weten!</p>
+                <div class="content__right--share-buttons">
+                    <a href="#"><img src="<?php echo get_template_directory_uri();?>/content/img/whatsapp-brands.svg" alt="Whatsapp" width="20px"></a>
+                    <a href="#"><img src="<?php echo get_template_directory_uri();?>/content/img/envelope-solid.svg" alt="Mail" width="20px"></a>
                 </div>
             </div>
         </div>

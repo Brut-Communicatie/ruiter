@@ -1432,7 +1432,7 @@ html {
 
 .content__right--block--wrapper {
 	width: 85%;
-	margin: 2rem auto;
+	margin: 1rem auto 2rem;
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;

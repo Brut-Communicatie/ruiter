@@ -27,7 +27,7 @@ get_header();?>
                         </div>
                         <div class="content__left--item-info">
                             <span>Regio</span>
-                            <p>Utrecht/N-Z Holland</p>
+                            <p>Randstad</p>
                         </div>
                     </div>
                     <div class="content__left--item">
@@ -60,11 +60,11 @@ get_header();?>
                     <!-- Onderkant content -->
                     <div class="content__left--bottom">
                         <section>
-                            <p>Als grootste dakkapelspecialist in Nederland staan wij voor kwaliteit en betrouwbaarheid. Voor onze Dakkapel Monteurs geldt dat ook. Wij zoeken daarom ervaren vakmannen. Vakmannen die onze klanten – die een gat in hun dak stiekem best spannend vinden – blij maken met een dakkapel waar zij vaak al maanden naar uitkijken. Vakmannen die samen met ons willen bouwen aan de toekomst. En dat op grote hoogtes. </p>
+                            <p>Als grootste dakkapelspecialist in Nederland staan wij voor kwaliteit en betrouwbaarheid. Voor onze Dakkapel Monteurs geldt dat ook. Wij zoeken daarom ervaren vakmannen. Vakmannen die onze klanten – die een gat in hun dak stiekem best spannend vinden – blij maken met een dakkapel waar zij vaak al maanden naar uitkijken. Vakmannen die samen met ons willen bouwen aan de toekomst. En dat op grote hoogte. </p>
                         </section>
                         <section>
                             <h4>Laat jouw jongensdroom uitkomen</h4>
-                            <p>Jij droomde toen je klein was toch ook van afwisselend werk dat ertoe doet? Bij Ruiter Dakkapellen komt deze droom uit! Als Dakkapel Monteur ben jij specialist op het gebied van dakkapellen plaatsen. Je weet precies wat je doet, werkt nauwkeurig en bent oplossingsgericht. Ook de communicatie naar klanten gaat jou soepel af. Je stelt klanten op hun gemak en vertelt hoe deze – voor hen spannende – dag gaat verlopen. De combinatie van een vakkundig geplaatste dakkapel en tevreden klanten maakt jou trots!</p>
+                            <p>Jij droomde toen je klein was toch ook van afwisselend werk dat ertoe doet? Bij Ruiter Dakkapellen komt deze droom uit! Als Dakkapel Monteur ben jij specialist op het gebied van dakkapellen plaatsen. Je weet precies wat je doet, werkt nauwkeurig en bent oplossingsgericht. Ook de communicatie naar klanten gaat jou soepel af. Je stelt klanten op hun gemak en vertelt hoe deze – voor hen spannende – dag gaat verlopen. De combinatie van een vakkundig geplaatste dakkapel en een tevreden klant maakt jou trots!</p>
                         </section>
                     </div>
 
@@ -154,7 +154,7 @@ get_header();?>
     <div class="bottom__container">
         <div class="bottom__left">
             <h3>
-                Over Ruiter Dakkapellen
+            Waarom jij kiest voor Ruiter Dakkapellen
             </h3>
             <p>
             Ruiter is marktleider in Nederland en staat voor kwaliteit en betrouwbaarheid. Al ruim 40 jaar produceren en monteren wij meer dan 70 dakkapellen per week. Dit doen we voor consumenten, woningbouwcorporaties, dealers, bouwmarkten, aannemers, onderhoudsbedrijven en nog vele andere relaties. Met meerdere showrooms verspreid in het land bedienen wij een groot deel van Nederland, maar met name de Randstad. 

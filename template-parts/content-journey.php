@@ -18,7 +18,7 @@
         <div class="cta__journey--content">
             <h4>In het ‘echt’</h4>
             <div class="cta__journey--circle"></div>
-            <p>Tijd voor een echte kennismaking op ons bedrijf.</p>
+            <p>Tijd voor een echte kennismaking bij ons bedrijf.</p>
         </div>
     </div>
     <div class="cta__journey--item">
@@ -32,7 +32,7 @@
         <div class="cta__journey--content">
             <h4>Aan de slag</h4>
             <div class="cta__journey--circle"></div>
-            <p>Jouw jongensdroom komt nu uit.</p>
+            <p>Jouw jongensdroom komt uit.</p>
         </div>
     </div>
 </div>

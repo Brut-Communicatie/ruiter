@@ -1406,7 +1406,7 @@ html {
 	align-items: center;
 	background-color: #ffe017;
 	width: 100%;
-	padding: 1rem 0;
+	padding: 2rem 0;
 	border-bottom: 5px solid #fff;
 }
 
@@ -1415,7 +1415,7 @@ html {
 	justify-content: center;
 	align-items: center;
 	width: auto;
-	padding: 2rem;
+	padding: 1rem;
 	background-color: #fff;
 }
 

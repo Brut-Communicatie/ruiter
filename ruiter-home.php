@@ -116,8 +116,8 @@ get_header();?>
                         <p>Neem contact op met Patricia</p>
                         <div class="content__right--contact-socials">
                             <a href="#"><img src="<?php echo get_template_directory_uri();?>/content/img/whatsapp-brands.svg" alt="Whatsapp" width="20px"></a>
-                            <a href="#"><img src="<?php echo get_template_directory_uri();?>/content/img/phone-alt-solid.svg" alt="Tel" width="20px"></a>
-                            <a href="#"><img src="<?php echo get_template_directory_uri();?>/content/img/envelope-solid.svg" alt="Mail" width="20px"></a>
+                            <a href="tel:310884321051"><img src="<?php echo get_template_directory_uri();?>/content/img/phone-alt-solid.svg" alt="Tel" width="20px"></a>
+                            <a href="mailto:p.dekort@ruiterdakkapellen.nl"><img src="<?php echo get_template_directory_uri();?>/content/img/envelope-solid.svg" alt="Mail" width="20px"></a>
                         </div>
                     </div>
                 </div>

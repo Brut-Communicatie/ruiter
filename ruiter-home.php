@@ -75,7 +75,9 @@ get_header();?>
         <div class="content__right">
             <div class="content__right--block">
                 <div class="content__right--block--btn">
+                <div class="content__right--block--btn-padding">
                     <a class="horizontalOverlay" href="#contact">Direct solliciteren</a>
+                </div>
                 </div>
                 <div class="content__right--block--wrapper">
                     <div class="content__right--block--intro">

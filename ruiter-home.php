@@ -127,7 +127,7 @@ get_header();?>
                 <h4>Niets voor jou, wel voor een maat?</h4>
                 <p>Laat het ze weten!</p>
                 <div class="content__right--share-buttons">
-                    <a href="#"><img src="<?php echo get_template_directory_uri();?>/content/img/whatsapp-brands.svg" alt="Whatsapp" width="20px"></a>
+                    <a href="whatsapp://send?text=Bekijk deze vacature!"><img src="<?php echo get_template_directory_uri();?>/content/img/whatsapp-brands.svg" alt="Whatsapp" width="20px"></a>
                     <a href="#"><img src="<?php echo get_template_directory_uri();?>/content/img/envelope-solid.svg" alt="Mail" width="20px"></a>
                 </div>
             </div>

@@ -2263,6 +2263,20 @@ html {
 	}
 }
 
+.newsletter__right--row a,
+.newsletter__right--row a:active,
+.newsletter__right--row a:link,
+.newsletter__right--row a:visited {
+	color: #222c33;
+}
+
+.newsletter__right--row a:hover,
+.newsletter__right--row a:active:hover,
+.newsletter__right--row a:link:hover,
+.newsletter__right--row a:visited:hover {
+	opacity: 0.9;
+}
+
 @media screen and (max-width: 500px) {
 	.newsletter__right--row:nth-child(3) {
 		flex-direction: row !important;

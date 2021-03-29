@@ -1570,7 +1570,7 @@ html {
 	justify-content: center;
 	align-items: flex-start;
 	flex-direction: column;
-	width: 55%;
+	width: 100%;
 	height: 10rem;
 	color: #222c33;
 }
@@ -1583,14 +1583,14 @@ html {
 .content__right--contact-info p {
 	font-family: "Droid Sans", Verdana, sans-serif;
 	margin: 0 0 5px;
-	font-size: 13px;
+	font-size: 16px;
 }
 
 .content__right--contact-socials {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	align-items: flex-start;
-	width: 80%;
+	width: 100%;
 }
 
 .content__right--contact-socials a,
@@ -1604,6 +1604,7 @@ html {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-right: 5px;
 	transition: opacity .25s ease;
 }
 

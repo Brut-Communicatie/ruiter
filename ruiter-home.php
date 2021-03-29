@@ -108,16 +108,15 @@ get_header();?>
             </div>
             <div class="content__right--contact">
                 <div class="content__right--contact-wrapper">
-                    <div class="content__right--contact-img">
+                    <!-- <div class="content__right--contact-img">
                         <img src="<?php echo get_template_directory_uri();?>/content/img/patricia.png" alt="Foto van Patricia" width="150px">
-                    </div>
+                    </div> -->
                     <div class="content__right--contact-info">
                         <h4>Vragen?</h4>
-                        <p>Neem contact op met Patricia</p>
+                        <p>Neem contact op met Thomas Ruiter</p>
                         <div class="content__right--contact-socials">
-                            <a href="#"><img src="<?php echo get_template_directory_uri();?>/content/img/whatsapp-brands.svg" alt="Whatsapp" width="20px"></a>
-                            <a href="tel:310884321051"><img src="<?php echo get_template_directory_uri();?>/content/img/phone-alt-solid.svg" alt="Tel" width="20px"></a>
-                            <a href="mailto:p.dekort@ruiterdakkapellen.nl"><img src="<?php echo get_template_directory_uri();?>/content/img/envelope-solid.svg" alt="Mail" width="20px"></a>
+                            <a href="tel:0884321000"><img src="<?php echo get_template_directory_uri();?>/content/img/phone-alt-solid.svg" alt="Tel" width="20px"></a>
+                            <a href="mailto:t.ruiter@ruiterdakkapellen.nl"><img src="<?php echo get_template_directory_uri();?>/content/img/envelope-solid.svg" alt="Mail" width="20px"></a>
                         </div>
                     </div>
                 </div>

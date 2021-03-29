@@ -794,7 +794,15 @@ html {
 				color: $ruiter-grijs;
 			}
 		}
-
+		a,
+			a:active,
+			a:link,
+			a:visited {
+				color: $ruiter-grijs;
+				&:hover{
+					opacity: 0.9;
+				}
+			}
 		&--content {
 			margin-top: 1rem;
 			@include Flex(flex-start, flex-start, column);

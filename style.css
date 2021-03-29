@@ -1814,7 +1814,7 @@ html {
 .cta__form--item a:active:hover,
 .cta__form--item a:link:hover,
 .cta__form--item a:visited:hover {
-	opacity: 0.9;
+	color: #8AD0C8;
 }
 
 .cta__form--item:nth-child(2) {
@@ -2274,7 +2274,7 @@ html {
 .newsletter__right--row a:active:hover,
 .newsletter__right--row a:link:hover,
 .newsletter__right--row a:visited:hover {
-	opacity: 0.9;
+	color: #8AD0C8;
 }
 
 @media screen and (max-width: 500px) {

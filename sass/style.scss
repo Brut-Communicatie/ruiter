@@ -823,7 +823,7 @@ html {
 		a:visited {
 			color: $ruiter-grijs;
 			&:hover{
-				opacity: 0.9;
+				color: $ruiter-hover;
 			}
 		}
 			&:nth-child(2) {
@@ -1177,14 +1177,14 @@ html {
 			margin-bottom: 10px;
 			@include Responsive(500px) {
 				@include Flex(flex-start, flex-start, column);
-			} 
+			}
 			a,
 			a:active,
 			a:link,
 			a:visited {
 				color: $ruiter-grijs;
 				&:hover{
-					opacity: 0.9;
+					color: $ruiter-hover;
 				}
 			}
 			&:nth-child(3){

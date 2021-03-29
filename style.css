@@ -1771,20 +1771,6 @@ html {
 	color: #222c33;
 }
 
-.cta__form a,
-.cta__form a:active,
-.cta__form a:link,
-.cta__form a:visited {
-	color: #222c33;
-}
-
-.cta__form a:hover,
-.cta__form a:active:hover,
-.cta__form a:link:hover,
-.cta__form a:visited:hover {
-	opacity: 0.9;
-}
-
 .cta__form--content {
 	margin-top: 1rem;
 	display: flex;
@@ -1815,6 +1801,20 @@ html {
 
 .cta__form--item p {
 	margin: 0;
+}
+
+.cta__form--item a,
+.cta__form--item a:active,
+.cta__form--item a:link,
+.cta__form--item a:visited {
+	color: #222c33;
+}
+
+.cta__form--item a:hover,
+.cta__form--item a:active:hover,
+.cta__form--item a:link:hover,
+.cta__form--item a:visited:hover {
+	opacity: 0.9;
 }
 
 .cta__form--item:nth-child(2) {

@@ -794,15 +794,7 @@ html {
 				color: $ruiter-grijs;
 			}
 		}
-		a,
-			a:active,
-			a:link,
-			a:visited {
-				color: $ruiter-grijs;
-				&:hover{
-					opacity: 0.9;
-				}
-			}
+		
 		&--content {
 			margin-top: 1rem;
 			@include Flex(flex-start, flex-start, column);
@@ -824,7 +816,16 @@ html {
 			flex-grow: 1;
 			p{
 				margin: 0;
+			} 
+			a,
+		a:active,
+		a:link,
+		a:visited {
+			color: $ruiter-grijs;
+			&:hover{
+				opacity: 0.9;
 			}
+		}
 			&:nth-child(2) {
 				margin-left: 10px;
 				@include Flex(flex-start, flex-start);

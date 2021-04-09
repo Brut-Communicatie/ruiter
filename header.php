@@ -29,7 +29,9 @@
 		<div class="header__top">
 			<div class="header__top--container">
 				<div class="header__top--logo">
+				<a href="https://www.ruiterdakkapellen.nl" target="_blank" rel="noopener norefferer">
 					<img src="<?php echo get_template_directory_uri();?>/content/img/ruiter_logo.png" width="50px" alt="Ruiter Logo"/>
+				</a>
 				</div>
 				<p>Ruiter Dakkapellen, ruimte om te groeien</p>
 				<div class="header__nav">

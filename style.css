@@ -1570,7 +1570,7 @@ html {
 	justify-content: center;
 	align-items: flex-start;
 	flex-direction: column;
-	width: 55%;
+	width: 100%;
 	height: 10rem;
 	color: #222c33;
 }
@@ -1583,14 +1583,14 @@ html {
 .content__right--contact-info p {
 	font-family: "Droid Sans", Verdana, sans-serif;
 	margin: 0 0 5px;
-	font-size: 13px;
+	font-size: 16px;
 }
 
 .content__right--contact-socials {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	align-items: flex-start;
-	width: 80%;
+	width: 100%;
 }
 
 .content__right--contact-socials a,
@@ -1604,6 +1604,7 @@ html {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-right: 5px;
 	transition: opacity .25s ease;
 }
 
@@ -1800,6 +1801,20 @@ html {
 
 .cta__form--item p {
 	margin: 0;
+}
+
+.cta__form--item a,
+.cta__form--item a:active,
+.cta__form--item a:link,
+.cta__form--item a:visited {
+	color: #222c33;
+}
+
+.cta__form--item a:hover,
+.cta__form--item a:active:hover,
+.cta__form--item a:link:hover,
+.cta__form--item a:visited:hover {
+	color: #8AD0C8;
 }
 
 .cta__form--item:nth-child(2) {
@@ -2246,6 +2261,20 @@ html {
 		align-items: flex-start;
 		flex-direction: column;
 	}
+}
+
+.newsletter__right--row a,
+.newsletter__right--row a:active,
+.newsletter__right--row a:link,
+.newsletter__right--row a:visited {
+	color: #222c33;
+}
+
+.newsletter__right--row a:hover,
+.newsletter__right--row a:active:hover,
+.newsletter__right--row a:link:hover,
+.newsletter__right--row a:visited:hover {
+	color: #8AD0C8;
 }
 
 @media screen and (max-width: 500px) {

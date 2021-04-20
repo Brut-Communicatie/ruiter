@@ -21,6 +21,24 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+<!--
+Start of Floodlight Tag: Please do not remove
+Activity name of this tag: Pageview Ruiter Dakkapellen
+URL of the webpage where the tag is expected to be placed: https://www.ruiterdakkapellen.nl/
+This tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.
+Creation Date: 04/19/2021
+-->
+<script type="text/javascript">
+var axel = Math.random() + "";
+var a = axel * 10000000000000;
+document.write('<iframe src="https://10752378.fls.doubleclick.net/activityi;src=10752378;type=pagev0;cat=pagev0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
+</script>
+<noscript>
+<iframe src="https://10752378.fls.doubleclick.net/activityi;src=10752378;type=pagev0;cat=pagev0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>
+</noscript>
+<!-- End of Floodlight Tag: Please do not remove -->
+
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'ruiterdakkapellen' ); ?></a>

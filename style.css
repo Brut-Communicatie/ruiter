@@ -1883,6 +1883,10 @@ html {
 	align-items: flex-start;
 }
 
+.cta__form--radio p:nth-child(1) {
+	margin-bottom: 0;
+}
+
 .cta__form--radio p:nth-child(2) {
 	margin-top: 0;
 }

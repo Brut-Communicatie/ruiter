@@ -908,8 +908,11 @@ html {
 			flex-direction: column;
 			justify-content: flex-start;
 			align-items: flex-start;
- 
+			
 			p{
+				&:nth-child(1){
+					margin-bottom: 0;
+				}
 				&:nth-child(2){
 					margin-top: 0;
 				}

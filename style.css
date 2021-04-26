@@ -1876,6 +1876,18 @@ html {
 	opacity: 0.9;
 }
 
+.cta__form--radio {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.cta__form--radio span {
+	display: flex;
+	justify-content: flex-start;
+}
+
 .cta__form--options {
 	display: flex;
 	justify-content: flex-start;
@@ -2445,7 +2457,10 @@ html {
 	width: 100%;
 }
 
-.footer__navigation a, .footer__navigation a:active, .footer__navigation a:link, .footer__navigation a:visited {
+.footer__navigation a,
+.footer__navigation a:active,
+.footer__navigation a:link,
+.footer__navigation a:visited {
 	width: fit-content;
 	font-family: "Droid Sans", Verdana, sans-serif;
 	text-decoration: none;
@@ -2453,12 +2468,18 @@ html {
 }
 
 @media screen and (max-width: 900px) {
-	.footer__navigation a, .footer__navigation a:active, .footer__navigation a:link, .footer__navigation a:visited {
+	.footer__navigation a,
+	.footer__navigation a:active,
+	.footer__navigation a:link,
+	.footer__navigation a:visited {
 		margin-bottom: 10px;
 	}
 }
 
-.footer__navigation a:hover, .footer__navigation a:active:hover, .footer__navigation a:link:hover, .footer__navigation a:visited:hover {
+.footer__navigation a:hover,
+.footer__navigation a:active:hover,
+.footer__navigation a:link:hover,
+.footer__navigation a:visited:hover {
 	text-decoration: underline;
 	color: #8AD0C8;
 }
@@ -2532,15 +2553,18 @@ html {
 	top: 0;
 }
 
-.accept_nieuwsbrief, .accept_privacy {
+.accept_nieuwsbrief,
+.accept_privacy {
 	width: auto !important;
 }
 
-.accept_nieuwsbrief span, .accept_privacy span {
+.accept_nieuwsbrief span,
+.accept_privacy span {
 	width: auto;
 }
 
-.accept_nieuwsbrief .wpcf7-list-item, .accept_privacy .wpcf7-list-item {
+.accept_nieuwsbrief .wpcf7-list-item,
+.accept_privacy .wpcf7-list-item {
 	margin: 0;
 }
 

@@ -1896,6 +1896,11 @@ html {
 	flex-direction: column;
 }
 
+.cta__form--radio .wpcf7-checkbox {
+	display: flex;
+	flex-direction: column;
+}
+
 .cta__form--options {
 	display: flex;
 	justify-content: flex-start;

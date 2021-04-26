@@ -1883,9 +1883,13 @@ html {
 	align-items: flex-start;
 }
 
-.cta__form--radio span {
+.cta__form--radio p:nth-child(2) {
+	margin-top: 0;
+}
+
+.cta__form--radio > .wpcf7-radio {
 	display: flex;
-	justify-content: flex-start;
+	flex-direction: column;
 }
 
 .cta__form--options {

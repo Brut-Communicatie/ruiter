@@ -908,10 +908,15 @@ html {
 			flex-direction: column;
 			justify-content: flex-start;
 			align-items: flex-start;
-
-			span{
+ 
+			p{
+				&:nth-child(2){
+					margin-top: 0;
+				}
+			}
+			>.wpcf7-radio{
 				display: flex;
-				justify-content: flex-start;
+				flex-direction: column;
 			}
 		}
 

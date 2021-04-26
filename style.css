@@ -1887,7 +1887,7 @@ html {
 	margin-top: 0;
 }
 
-.cta__form--radio > .wpcf7-radio {
+.cta__form--radio .wpcf7-radio {
 	display: flex;
 	flex-direction: column;
 }

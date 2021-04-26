@@ -2,7 +2,7 @@
     <div class="cta__journey--line"></div>
     <div class="cta__journey--item">
         <div class="cta__journey--content">
-            <h4>Je solliciteert</h4>
+            <h4>Je reageert</h4>
             <div class="cta__journey--circle"></div>
             <p>Hier kijken we nu al naar uit!</p>
         </div>

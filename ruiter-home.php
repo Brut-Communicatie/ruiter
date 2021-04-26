@@ -66,6 +66,9 @@ get_header();?>
                             <h4>Laat jouw jongensdroom uitkomen</h4>
                             <p>Jij droomde toen je klein was toch ook van afwisselend werk dat ertoe doet? Bij Ruiter Dakkapellen komt deze droom uit! Als Dakkapel Monteur ben jij specialist op het gebied van dakkapellen plaatsen. Je weet precies wat je doet, werkt nauwkeurig en bent oplossingsgericht. Ook de communicatie naar klanten gaat jou soepel af. Je stelt klanten op hun gemak en vertelt hoe deze – voor hen spannende – dag gaat verlopen. De combinatie van een vakkundig geplaatste dakkapel en een tevreden klant maakt jou trots!</p>
                         </section>
+
+                        </br></br></br>
+                        <iframe width="100%" height="409" src="https://www.youtube.com/embed/3esHRRAsmEc?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
 
                 </div>
@@ -108,9 +111,6 @@ get_header();?>
             </div>
             <div class="content__right--contact">
                 <div class="content__right--contact-wrapper">
-                    <!-- <div class="content__right--contact-img">
-                        <img src="<?php echo get_template_directory_uri();?>/content/img/patricia.png" alt="Foto van Patricia" width="150px">
-                    </div> -->
                     <div class="content__right--contact-info">
                         <h4>Vragen?</h4>
                         <p>Neem contact op met Thomas Ruiter</p>

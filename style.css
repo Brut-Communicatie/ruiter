@@ -2611,4 +2611,9 @@ html {
 	margin: 0;
 }
 
+.bedankt__container {
+	width: 100%;
+	min-height: 20rem;
+}
+
 /*# sourceMappingURL=style.css.map */

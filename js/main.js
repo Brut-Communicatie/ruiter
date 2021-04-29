@@ -12,4 +12,5 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
     //Send the information to Google Analytics
     // ga( 'send', 'event', 'Contact Form', 'submit' ); 
     gtag('event', 'submit_form');
+    location = 'https://www.werkenbijruiterdakkapellen.nl/bedankt';
   }, false );

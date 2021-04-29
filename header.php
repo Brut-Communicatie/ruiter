@@ -46,6 +46,8 @@
 	src="https://www.facebook.com/tr?id=533897357780431&ev=PageView&noscript=1"
 	/></noscript>
 	<!-- End Facebook Pixel Code -->
+
+	<meta name="facebook-domain-verification" content="5406wfpvnoou4d94tivwsze6rnbvhe" />
 </head>
 
 <body <?php body_class(); ?>>

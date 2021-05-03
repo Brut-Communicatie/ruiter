@@ -11,17 +11,18 @@
 
 ?>
 <!doctype html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?> prefix="og: https://ogp.me/ns#">
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<?php wp_head(); ?>
-
+	
 	<meta name="title" property="og:title" content="Werken bij Ruiter Dakkapellen" />
 	<meta name="description" property="og:description" content="Als grootste dakkapelspecialist in Nederland staan wij voor kwaliteit en betrouwbaarheid." />
 	<meta name="image" property="og:image" content="<?php echo get_template_directory_uri(  );?>/content/img/ruiter-link.jpg" />
+	<meta property="og:url" content="https://www.werkenbijruiterdakkapellen.nl" />
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-B46ZRKQR0X"></script>

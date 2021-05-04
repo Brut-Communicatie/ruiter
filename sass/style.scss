@@ -639,12 +639,32 @@ html {
 			@include Responsive($tabletBreakpoint) {
 				width: 100%;
 			}
+			&--solliciteer{
+				padding: 20px 0 0;
+				box-sizing: border-box;
+				a, a:active, a:visited, a:link{
+					box-sizing: border-box;
+					color: $ruiter-grijs;
+					@include Font;
+					text-decoration: none;
+					margin: 20px 0;
+					background-color: $ruiter-geel;
+					padding: 10px;
+					font-weight: 700;
 
+					&:hover{
+						background-color: $ruiter-grijs;
+						color: $ruiter-geel;
+					}
+				}
+			}
 			&-wrapper {
 				width: 85%;
 				@include Flex(space-between, center);
 				margin: 0 auto;
-				height: 10rem;
+				height: auto;
+				box-sizing: border-box;
+				padding: 20px 0;
 			}
 
 			&-img {

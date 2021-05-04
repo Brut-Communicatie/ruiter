@@ -1543,13 +1543,36 @@ html {
 	}
 }
 
+.content__right--contact--solliciteer {
+	padding: 20px 0 0;
+	box-sizing: border-box;
+}
+
+.content__right--contact--solliciteer a, .content__right--contact--solliciteer a:active, .content__right--contact--solliciteer a:visited, .content__right--contact--solliciteer a:link {
+	box-sizing: border-box;
+	color: #222c33;
+	font-family: "Droid Sans", Verdana, sans-serif;
+	text-decoration: none;
+	margin: 20px 0;
+	background-color: #ffe017;
+	padding: 10px;
+	font-weight: 700;
+}
+
+.content__right--contact--solliciteer a:hover, .content__right--contact--solliciteer a:active:hover, .content__right--contact--solliciteer a:visited:hover, .content__right--contact--solliciteer a:link:hover {
+	background-color: #222c33;
+	color: #ffe017;
+}
+
 .content__right--contact-wrapper {
 	width: 85%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	margin: 0 auto;
-	height: 10rem;
+	height: auto;
+	box-sizing: border-box;
+	padding: 20px 0;
 }
 
 .content__right--contact-img {

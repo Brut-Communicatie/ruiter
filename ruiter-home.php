@@ -54,7 +54,6 @@ get_header();?>
                             <p>Ben je met z'n tweeën een <strong>hecht team</strong></p>
                             <p>Krijg je <strong>alle ruimte om te groeien</strong></p>
                             <p>Kan je in <strong>loondienst of als ZZP'er</strong> bij ons werken</p>
-                            <p>Kan je met voldoende ervaring ook als  <strong>opzichter</strong> aan de slag</p>
                         </h3>
                     </div>
 
@@ -65,7 +64,7 @@ get_header();?>
                         </section>
                         <section>
                             <h4>Laat jouw jongensdroom uitkomen</h4>
-                            <p>Jij droomde toen je klein was toch ook van afwisselend werk dat ertoe doet? Bij Ruiter Dakkapellen komt deze droom uit! Als Dakkapel Monteur of Opzichter ben jij specialist op het gebied van dakkapellen plaatsen. Je weet precies wat je doet, werkt nauwkeurig en bent oplossingsgericht. Ook de communicatie naar klanten gaat jou soepel af. Je stelt klanten op hun gemak en vertelt hoe deze – voor hen spannende – dag gaat verlopen. De combinatie van een vakkundig geplaatste dakkapel en een tevreden klant maakt jou trots!</p>
+                            <p>Jij droomde toen je klein was toch ook van afwisselend werk dat ertoe doet? Bij Ruiter Dakkapellen komt deze droom uit! Als Dakkapel Monteur ben jij specialist op het gebied van dakkapellen plaatsen. Je weet precies wat je doet, werkt nauwkeurig en bent oplossingsgericht. Ook de communicatie naar klanten gaat jou soepel af. Je stelt klanten op hun gemak en vertelt hoe deze – voor hen spannende – dag gaat verlopen. De combinatie van een vakkundig geplaatste dakkapel en een tevreden klant maakt jou trots!</p>
                         </section>
 
                         </br></br></br>
